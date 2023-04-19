@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #000;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+div.wrapper{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+}
+main.site-main-content{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.logo-container{
+    width: 12.5rem;
+    height: 12.5rem;
+    /* background-color: yellow; */
+}
+.logo-container img{
+    width: 100%;
+}
+.description-container{
+    padding: 2rem;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    background-color: rgb(52, 52, 135);
+}
+div.grow{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  
+    padding: 1rem;
+} 
+.site-main-description{
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+   color: white;
+    line-height: 1.5rem;
+}
+
+.click-to-enter{
+    display: flex;
+    flex-direction: column;
+   text-align: center;
+   align-items: center;
+}
+
+.click-to-enter .start-course{
+    width: fit-content;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    background-color: rgb(52, 52, 135);
+    color: white;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.click-to-enter .start-course:hover{
+ 
+   background-color: lightblue;
+   color: black;
+    
+}
+
+/* css for header */
+
+.site-main-header{
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+   
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    background-color: rgb(52, 52, 135);
+}
+.site-main-title{
+    color: white;
+}
+.site-main-header .change{
+    font-size: 5rem;
+    color: #c14e4e;
+   
+}
+.site-main-header .small{
+    font-size: 1rem;
+    color: white;
+   
+   
+}
+
+/* css for header ends here */
+
+/* css for footer */
+footer.site-main-footer{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   padding: 1rem;
+   /* font-size: 1.5rem; */
+   /* border-top: 0.2rem solid #000000; */
+   border-top-left-radius: 2rem;
+   border-top-right-radius: 2rem;
+   background-color: rgb(52, 52, 135);
+   
+}
+
+footer.site-main-footer .author-name{
+    font-size: 2rem;
+}
+footer.site-main-footer .author-contact a {
+    display: flex;
+   align-items: center;
+   
+}
+footer.site-main-footer .author-contact a span {
+    color: white;
+    border-bottom: 1px solid white;
+   
+}
+
+
+
+footer.site-main-footer .fa-at{
+    color: red;
+    font-size: 1.5rem;
+    margin-right: 5px;
+}
+footer.site-main-footer p{
+    color: white;
+}
+
+/* css for footer ends here */

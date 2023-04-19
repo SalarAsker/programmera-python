@@ -1,0 +1,52 @@
+/* css layout */
+.site-main{
+    width: 90%;
+    margin: 1rem auto;
+    height: auto;
+}
+.site-main-container{
+     display: flex; 
+     justify-content: space-between;
+
+}
+
+.site-main-container .site-sidebar-container{
+    /* background-color: yellow; */
+     width: 15%; 
+}
+
+.site-main-container .site-prog-content-container{
+    background-color: lightcyan;
+    width: 83%;
+}
+/* css layout ends here */
+
+/* css sidebar */
+.navigations-ul .logo-container{
+    background-color: white; 
+    border-radius: 0;
+    width: 5rem;
+    height: 5rem;
+    margin:  0 auto;
+}
+.navigations-ul .logo-container img{
+    width: 100%;
+}
+.navigations-ul{
+    list-style-type: none;
+    padding: 0.5rem;
+}
+    .navigations-ul li{
+        margin-bottom: 1rem;
+        background-color: rgb(52, 52, 135);
+        padding: 0.5rem;
+        border-bottom-right-radius: 25px;
+        border-top-right-radius: 25px;
+        
+        
+    }
+        .navigations-ul li a{
+            display: inline-block;
+            width: 100%;
+            color: white;
+        }
