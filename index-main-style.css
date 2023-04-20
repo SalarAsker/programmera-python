@@ -153,3 +153,16 @@ footer.site-main-footer p{
 }
 
 /* css for footer ends here */
+
+
+/* media queries */
+
+@media (max-width:500px){
+    div.grow{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      
+        padding: 1rem;
+    } 
+}

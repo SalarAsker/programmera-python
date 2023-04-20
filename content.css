@@ -50,3 +50,13 @@
             width: 100%;
             color: white;
         }
+
+        @media (max-width: 900px) {
+            .site-main-container .site-sidebar-container{
+                display: none;
+            }
+            .site-main-container .site-prog-content-container{
+                background-color: lightcyan;
+                width: 100%;
+            }
+          }
