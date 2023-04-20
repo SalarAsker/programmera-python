@@ -14,14 +14,14 @@
 
 .site-main-container .site-sidebar-container{
     /* background-color: yellow; */
-     width: 15%;
-     background-color: yellow;
-    position: relative;
+     width: 200px;
+  
 }
 
 .site-main-container .site-prog-content-container{
-    background-color: lightcyan;
+    /* background-color: lightcyan; */
     width: 83%;
+  
 }
 /* css layout ends here */
 
@@ -54,35 +54,15 @@
             width: 100%;
             color: white;
         }
-/* sidebar button */
-      
-/* sidebar button ends here */
-        @media (max-width: 1092px) {
+
+        @media (max-width: 700px) {
             .site-main-container .site-sidebar-container{
               display: none;
             }
             .site-main-container .site-prog-content-container{
-                background-color: lightcyan;
-                width: 90%;
-                margin-left: auto;
-            }
-
-            .sidebar-btn{
-                display: inline-block;
-                vertical-align: middle;
-                width: 30px;
-                height: 15px;
-                cursor: pointer;
-                /* margin: 20px; */
-                position: absolute;
-              left: 2%;
+                width: 100%;
                
             }
-    .sidebar-btn span{
-       background:red;
-       height: 1px;
-       /* width: 50px; */
-       display: block;
-       margin-bottom: 10px;
-    }
+
+ 
           }
