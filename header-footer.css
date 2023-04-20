@@ -31,6 +31,10 @@ div.wrapper{
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
     background-color: rgb(52, 52, 135);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .site-main-title{
     color: white;
@@ -43,7 +47,7 @@ div.wrapper{
 .site-main-header .small{
     font-size: 1rem;
     color: white;
-   
+    align-self: flex-end; 
 }
 
 /* css for header ends here */
@@ -89,3 +93,48 @@ footer.site-main-footer{
  }
  
  /* css for footer ends here */
+
+ /* media queries for header and footer */
+
+ @media (max-width:756px){
+ 
+    .site-main-header{
+       
+        font-size: 1rem; 
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .site-main-header .change{
+        font-size: 3rem;    
+    }
+    .site-main-header .small{
+        align-self: center; 
+     }
+   
+     .site-main-footer{
+        padding: 0.3rem;
+    }
+
+    footer.site-main-footer .author-name{
+        font-size: 1.5rem;
+    }
+    footer.site-main-footer .author-contact a {
+        display: flex;
+       align-items: center;
+       
+    }
+    footer.site-main-footer .author-contact a span {
+        color: white;
+        border-bottom: 1px solid white;
+       font-size: 0.7rem;
+    }
+    
+    
+    
+    footer.site-main-footer .fa-at{
+        color: red;
+        font-size: 1rem;
+        margin-right: 5px;
+    }
+}

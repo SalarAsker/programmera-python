@@ -191,4 +191,30 @@ footer.site-main-footer p{
     .logo-container img{
         width: 100%;
     }
+
+    .site-main-footer{
+        padding: 0.3rem;
+    }
+
+    footer.site-main-footer .author-name{
+        font-size: 1.5rem;
+    }
+    footer.site-main-footer .author-contact a {
+        display: flex;
+       align-items: center;
+       
+    }
+    footer.site-main-footer .author-contact a span {
+        color: white;
+        border-bottom: 1px solid white;
+       font-size: 0.7rem;
+    }
+    
+    
+    
+    footer.site-main-footer .fa-at{
+        color: red;
+        font-size: 1rem;
+        margin-right: 5px;
+    }
 }
