@@ -94,6 +94,10 @@ div.grow{
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
     background-color: rgb(52, 52, 135);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .site-main-title{
     color: white;
@@ -106,8 +110,7 @@ div.grow{
 .site-main-header .small{
     font-size: 1rem;
     color: white;
-   
-   
+   align-self: flex-end; 
 }
 
 /* css for header ends here */
@@ -157,7 +160,7 @@ footer.site-main-footer p{
 
 /* media queries */
 
-@media (max-width:500px){
+@media (max-width:512px){
     div.grow{
         width: 100%;
         display: flex;
@@ -165,4 +168,13 @@ footer.site-main-footer p{
       
         padding: 1rem;
     } 
+
+    .site-main-header{
+       
+        font-size: 1rem; 
+    }
+
+    .site-main-header .change{
+        font-size: 3rem;    
+    }
 }
