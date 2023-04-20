@@ -166,7 +166,7 @@ footer.site-main-footer p{
         display: flex;
         flex-direction: column;
       
-        padding: 1rem;
+        padding: 0.5rem;
     } 
 
     .site-main-header{
@@ -176,5 +176,14 @@ footer.site-main-footer p{
 
     .site-main-header .change{
         font-size: 3rem;    
+    }
+
+    .logo-container{
+        width: 5.5rem;
+        height: 5.5rem;
+        /* background-color: yellow; */
+    }
+    .logo-container img{
+        width: 100%;
     }
 }
