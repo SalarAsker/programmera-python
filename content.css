@@ -86,6 +86,65 @@
    display: block !important;
    
 }
+/*  css content and paragraph */
+.content-paragraph{
+    line-height: 2rem;
+    margin-bottom: 0.5rem;
+}
+.special-tag{
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-indent: 2rem;
+}
+.content-title-level1{
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid  rgb(52, 52, 135);
+}
+.content-title-level2{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+ul{
+    list-style-type: none;
+    /* text-indent: 2rem; */
+}
+ul li{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+ul li span{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+  
+}
+ul li div{
+   
+}
+.imp--word{
+    display: inline;
+    color: blue;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+/* fakta ruta */
+
+.fakta-ruta-box{
+    width: 50%;
+    background-color:orange;
+    padding: 1rem;
+    margin: 0 auto;
+    border: 1px solid  rgb(52, 52, 135);
+}
+.fakta-ruta-title{
+    border-bottom: 1px solid rgb(52,52,135);
+    display: block;
+}
 
         @media (max-width: 700px) {
             .site-main-container .site-sidebar-container{
@@ -108,9 +167,9 @@
                 
             }
 
-            .flex-child2{
+            .drop-down-menu{
                 display: none !important;
                 
             }
- 
-          }
+            
+    }
