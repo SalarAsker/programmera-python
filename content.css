@@ -145,6 +145,21 @@ ul li div{
     border-bottom: 1px solid rgb(52,52,135);
     display: block;
 }
+/* css down buttons */
+.pre-next{
+    display: flex;
+    justify-content: space-between;
+}
+    .pre-next button{
+        width: 200px;
+        padding: 1rem;
+        border: none;
+        background-color: rgb(52,52,135);
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
 
         @media (max-width: 700px) {
             .site-main-container .site-sidebar-container{
@@ -173,3 +188,11 @@ ul li div{
             }
             
     }
+
+
+
+    /* 
+    media query mobile
+   list main med line height dala
+    
+    */
