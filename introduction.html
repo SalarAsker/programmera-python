@@ -28,9 +28,12 @@
                 <div class="site-sidebar-container">
                     <nav>
                         <ul class="navigations-ul">
-                          
-                            <li><a href="#">Förord</a> </li>
-                            <li><a href="">Introduktion</a></li>
+                            <li><a href="index.html">Start sida</a> </li>
+                            <li><a href="forord.html?prev=start&next=introduction">Förord</a> </li>
+                            
+                            <li><a href="introduction.html?prev=forord&next=helloworld">Introduktion</a></li>
+                            
+                            <li><a href="helloworld.html?prev=introduction&next=variabler">Hello World program</a></li>
                             <li><a href="">Variabler</a></li>
                             <li><a href="">Datatyper</a></li>
                             <li><a href="">If satser</a></li>
@@ -58,9 +61,10 @@
                    <div class="drop-down-menu flex-child2">
                         <nav>
                             <ul class="navigations">
-                            
+                                <li><a href="#">Start sida</a> </li>
                                 <li><a href="#">Förord</a> </li>
                                 <li><a href="">Introduktion</a></li>
+                                <li><a href="">Hello World program</a></li>
                                 <li><a href="">Variabler</a></li>
                                 <li><a href="">Datatyper</a></li>
                                 <li><a href="">If satser</a></li>
@@ -76,7 +80,9 @@
 
                     <h1 class="content-title-level1">Introduktion till programmering och Python</h1>
                      <p class="special-tag">-----Att komma igång</p>
-                    I denna första modulen får du en kort introduktion av datorprogram och Python. Du ska därefter lära dig att komma igång med Python genom att köra Python i <a href="www.replit.com">Replit</a>. Du ska även skriva ett första ‘Hello World'-program.
+                    <p class="content-paragraph" style="font-style: italic;">I denna första modulen får du en kort introduktion till datorprogram, programmering och Python. 
+                        <!-- Du ska därefter lära dig att komma igång med Python genom att köra Python i <a href="www.replit.com">Replit</a>. Du ska även skriva ett första Hello World-program. -->
+                    </p> 
 
                         <h2 class="content-title-level2">Vad är en dator?</h2>
                         <p class="content-paragraph">När man talar om datorer tänker man annars i första hand på vanliga skrivbordsdatorer (pc) eller på bärbara datorer (laptop). Men smarta mobiler och surfplattor är också datorer. Dessutom används datorer som delar i mer eller mindre komplicerade tekniska apparater, till exempel, i robotgräsklippare. I dag omges vi av allt fler saker som styrs av program. Man kan säga att en dator är en ‘maskin’ som har till uppgift att behandla och lagra information. Grundläggande för alla datorer är att de styrs av program. Utan program har en dator ingen betydelse och användning. Tänk dig en dator utan Windows och Mac, eller en iPhone utan iOS.</p>
@@ -136,20 +142,8 @@
                         <h2 class="content-title-level2">Programmering och framtiden</h2>
                         <p class="content-paragraph">Då fortsätter vi! Nu har du förstått att vi använder programmering överallt, varje dag i våra liv. Programmering används i matematiska beräkningar, insamling av information, analyser, automatisering, tekniska produkter, tillverkning, inbyggda system… Ja, listan går att göra lång. Det senaste decenniet har programmering växt explosionsartat och idag ser vi hur tekniska produkter har utvecklats i otrolig hastighet. Det är inte många som kommer ihåg kassettbanden idag fastän det inte var många år sedan som alla hade hundratals i sina hem och hur många kommer ihåg dvd-spelaren om 10 år? Avslutningsvis, den senaste tekniken som artificiell intelligens, självkörande robotar, IoT (Internet of Things), blockchain och machine learning utvecklas nu som aldrig förr. Detta är den senaste tekniken som växer explosionsartat i samhället. Därför säger det sig själv, att framtidens jobb kommer i mycket hög grad kräva kunskap inom programmering.</p>
 
-                        <h2 class="content-title-level2">Köra Python</h2>
-                        <p class="content-paragraph">För att kunna programmera i Python behöver man Python installerat på sin dator och  ett program där man skriver och kör koden ifrån (ett så kallat IDE).</p>
-
-                        <p class="content-paragraph">Det finns däremot andra alternativ som gör det möjligt att man kan programmera i Python online i ett molnbaserat system. Fördelen med att programmera online är att man börjar koda med en gång utan att installera och konfigurera programmet IDE. Idag finns det massor av sådana system man kan välja. Om man skulle nämna några så är det Google Colab och Replit. </p>
-
-                        <p class="content-paragraph">I början ska vi koda i Replit. Efter att ha arbetat med ett par moduler ska vi installera Python på datorn. </p>
-
-                        <p class="content-paragraph">För att kunna programmera i Replit öppnar man sidan, </p>
-
-                            https://replit.com/
-
-
-                        <h2 class="content-title-level2">Hello World Program</h2>
-                            <p class="content-paragraph">Skriv ett ‘Hello World'-program tillsammans med din cirkelledare.</p>
+                        
+                        <p class="content-paragraph" style="text-align: center; font-style: italic;">Nu har du fått en introduktion till programmering och Python och är redo att koda ett första datornsprogram i Python. Klick näst och gå vidare </p>
 
 
 
@@ -159,7 +153,7 @@
                     <button id="btnPrev">Previous:</button>
                     <button id="btnNext">Next:</button>
                 </div>
-               
+                
                     <script>
                             const btnPrev = document.getElementById('btnPrev');
                             const btnNext = document.getElementById('btnNext');
@@ -179,11 +173,11 @@
                             btnNext.innerHTML =`Next: ${next.charAt(0).toUpperCase()}${next.slice(1)}`;
                             
                             btnPrev.addEventListener('click', () =>{
-                                location.href = 'index.html';
+                                location.href = 'forord.html?prev=start&next=introduction';
                             })
                             
                             btnNext.addEventListener('click', () =>{
-                                location.href = 'introduction.html?prev=introduction&next=variabler';
+                                location.href = 'helloworld.html?prev=introduction&next=variabler';
                             })
 
                         </script>

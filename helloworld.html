@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="header-footer.css">
+      <link rel="stylesheet" href="content.css">
+    <title>Introduction</title>
+</head>
+<body>
+
+    <div class="wrapper">
+
+         <!-- site header starts here -->
+         <header class="site-main-header">
+            
+            <h1 class="site-main-title">Lär dig programmera i </h1>
+            <span class="change">Python</span> 
+            <span class="small">Grund programmering kurs</span>
+        
+        </header> <!-- site header ends here -->
+
+        <main class="site-main">
+        
+            <div class="site-main-container">
+                <div class="site-sidebar-container">
+                    <nav>
+                        <ul class="navigations-ul">
+                            <li><a href="index.html">Start sida</a> </li>
+                            <li><a href="forord.html?prev=start&next=introduction">Förord</a> </li>
+                            
+                            <li><a href="introduction.html?prev=forord&next=helloworld">Introduktion</a></li>
+                            
+                            <li><a href="helloworld.html?prev=introduction&next=variabler">Hello World program</a></li>
+                            <li><a href="">Variabler</a></li>
+                            <li><a href="">Datatyper</a></li>
+                            <li><a href="">If satser</a></li>
+                            <li><a href="">Iterationssatser</a></li>
+                            <li><a href="">Sträng hantering</a></li>
+                            <li><a href="">Funktioner</a></li>
+                            <li> <a href="">Samling lista</a></li>
+                        </ul>
+                   </nav>
+                </div> <!-- sidebar contianer ends here -->
+                   
+
+               
+                <div class="site-prog-content-container">
+                   <div class="flex-child1">
+                    <button class="menu__toggle r-button" type="button">
+                        <span class="menu__toggle-hint screen-reader">Open menu</span>
+                        <span class="m-hamburger-1">
+                          <span class="m-hamburger-1">
+                            
+                          </span>
+                        </span>
+                      </button>
+                   </div>
+                   <div class="drop-down-menu flex-child2">
+                        <nav>
+                            <ul class="navigations">
+                                <li><a href="#">Start sida</a> </li>
+                                <li><a href="#">Förord</a> </li>
+                                <li><a href="">Introduktion</a></li>
+                                <li><a href="">Hello World program</a></li>
+                                <li><a href="">Variabler</a></li>
+                                <li><a href="">Datatyper</a></li>
+                                <li><a href="">If satser</a></li>
+                                <li><a href="">Iterationssatser</a></li>
+                                <li><a href="">Sträng hantering</a></li>
+                                <li><a href="">Funktioner</a></li>
+                                <li> <a href="">Samling lista</a></li>
+                            </ul>
+                    </nav>
+                   </div>
+
+                   <div class="flex-child3">
+
+                                       
+                 
+                       
+                        <h2 class="content-title-level2">Köra Python</h2>
+                        <p class="special-tag">------Ditt första program</p>
+                        <p class="content-paragraph">För att kunna programmera i Python behöver man Python installerat på sin dator och  ett program där man skriver och kör koden ifrån (ett så kallat IDE).</p>
+
+                        <p class="content-paragraph">Det finns däremot andra alternativ som gör det möjligt att man kan programmera i Python online i ett molnbaserat system. Fördelen med att programmera online är att man börjar koda med en gång utan att installera och konfigurera programmet IDE. Idag finns det massor av sådana online system man kan välja. Om man skulle nämna några så är det Google Colab och Replit. </p>
+
+                        <p class="content-paragraph">
+                            I den här kursen ska vi progammera i <span class="imp--word">Replit</span>. Det är ett simidigt molnsystem, där blir igång direkt efter ha skapat ett konto.
+                            
+                        <p class="content-paragraph">På Replit kan man även koda utan att skapa ett konto. Men om du vill spara ditt arbete så krävs det att du skapar ett användarkonto på Replit. Jag rekommenderar att du skapar ett användarkonto på Replit (ett användarkonto på Replit kostar inget men man får begränsad lagring på 500MB)</p>
+                        
+                        <p class="content-paragraph">Klick på följande länk som tar dig till Replit sidan.</p>
+                        <p class="content-paragraph"> <a href="https://replit.com/" target="_blank">Öppna Replit</a> </p>
+                        
+                        <div class="image-container" style="width: 100%;">
+                            <img src="res/replit-start.png" alt="">
+                        </div>
+                        
+
+
+                        <h2 class="content-title-level2">Hello World Program</h2>
+                            <p class="content-paragraph">Skriv ett ‘Hello World'-program tillsammans med din cirkelledare.</p>
+
+
+
+                    </div> <!-- flex child3 div ends here -->
+                <div class="pre-next">
+                    <button id="btnPrev">Previous:</button>
+                    <button id="btnNext">Next:</button>
+                </div>
+               
+                    <script>
+                            const btnPrev = document.getElementById('btnPrev');
+                            const btnNext = document.getElementById('btnNext');
+
+                            const queryString = window.location.search;
+                            console.log(queryString);
+                            const urlParams = new URLSearchParams(queryString);
+                            console.log(urlParams);
+                            
+                            const prev = urlParams.get('prev')
+                            const next = urlParams.get('next');
+                            
+                            console.log(next);
+                            prev.toUpperCase();
+                            
+                            btnPrev.innerHTML =`Previous: ${prev.charAt(0).toUpperCase()}${prev.slice(1)}`;
+                            btnNext.innerHTML =`Next: ${next.charAt(0).toUpperCase()}${next.slice(1)}`;
+                            
+                            btnPrev.addEventListener('click', () =>{
+                                location.href = 'introduction.html?prev=forord&next=hellow World';
+                            })
+                            
+                            btnNext.addEventListener('click', () =>{
+                                location.href = 'variabler.html?prev=helloworld&next=datatypes';
+                            })
+
+                        </script>
+            </div>               <!-- site content div ends here, contains side menu and content -->
+        </div>
+        
+        
+        
+        </main>
+
+
+
+
+          <!-- site footer starts here -->
+          <footer class="site-main-footer">
+            <p class="footer-description">Kursen skapats av</p>
+            <p class="author-name">Salar Asker Zada</p>
+            <p>Leg. programmerings lärare</p>
+            <p class="author-contact"> 
+                <a href="mailto:salarmeer@gmail.com"> 
+                    <i class="fa-solid fa-at"></i> <span>Kontakta om du vill ha privat undervisning</span></a> 
+                </p>
+        </footer>
+        <!-- site footer ends here -->
+    </div>
+
+    <script>
+        document.querySelector('.r-button')
+        .addEventListener('click', () =>{
+        document.querySelector('.drop-down-menu').classList.toggle('visible');
+        })
+    
+    </script>
+
+    </div>
+
+
+</body>
+</html>
