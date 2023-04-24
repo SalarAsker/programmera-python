@@ -32,8 +32,7 @@ main.site-main-content{
     padding: 2rem;
     border-radius: 2rem;
     margin-bottom: 1rem;
-    border: 1px solid rgb(52, 52, 135);
-    /* background-color: ; */
+    background-color: #f1ecec42
     
 }
 div.grow{
@@ -69,6 +68,7 @@ div.grow{
     margin-bottom: 5px;
     border: none;
     cursor: pointer;
+    width: 30%;
 
 }
 
@@ -90,7 +90,7 @@ div.grow{
     text-align: center;
     font-size: 1rem;
   
-    border: 1px solid rgb(52, 52, 135) ;
+    background-color: #f1ecec42;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
 
@@ -158,12 +158,12 @@ footer.site-main-footer{
    /* border-top: 0.2rem solid #000000; */
    border-top-left-radius: 2rem;
    border-top-right-radius: 2rem;
-   background-color: rgb(52, 52, 135);
+   background-color: #f1ecec42;
    
 }
 
 footer.site-main-footer .author-name{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 footer.site-main-footer .author-contact a {
     display: flex;
@@ -171,7 +171,7 @@ footer.site-main-footer .author-contact a {
    
 }
 footer.site-main-footer .author-contact a span {
-    color: white;
+    color: black;
     border-bottom: 1px solid white;
    
 }
@@ -184,7 +184,7 @@ footer.site-main-footer .fa-at{
     margin-right: 5px;
 }
 footer.site-main-footer p{
-    color: white;
+    color: black;
 }
 
 /* css for footer ends here */
@@ -277,4 +277,28 @@ footer.site-main-footer p{
      }
 
 }
+
+@media (max-width:949px){
+
+    .click-to-enter .start-course{
+     
+        font-size: 1rem;
+       
+    
+    }
+
+}
+
+@media (max-width:575px){
+
+    .click-to-enter .start-course{
+     
+        font-size: 0.8rem;
+        width: 80%;
+       
+    
+    }
+}
+
+
 

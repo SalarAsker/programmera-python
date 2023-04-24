@@ -32,7 +32,7 @@ div.wrapper{
     text-align: center;
     font-size: 1rem;
   
-    border: 1px solid rgb(52, 52, 135) ;
+    background-color: #f1ecec42;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
 
@@ -100,12 +100,14 @@ footer.site-main-footer{
     /* border-top: 0.2rem solid #000000; */
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
-    background-color: rgb(52, 52, 135);
+    background-color: #f1ecec42;
+   
     
  }
  
  footer.site-main-footer .author-name{
-     font-size: 2rem;
+     font-size: 1.2rem;
+     font-style: italic;
  }
  footer.site-main-footer .author-contact a {
      display: flex;
@@ -113,8 +115,8 @@ footer.site-main-footer{
     
  }
  footer.site-main-footer .author-contact a span {
-     color: white;
-     border-bottom: 1px solid white;
+     color: black;
+     border-bottom: 1px solid rgb(52, 52, 135);
     
  }
  
@@ -126,7 +128,7 @@ footer.site-main-footer{
      margin-right: 5px;
  }
  footer.site-main-footer p{
-     color: white;
+     color: black;
  }
  
  /* css for footer ends here */
@@ -134,7 +136,7 @@ footer.site-main-footer{
  /* media queries for header and footer */
 /* media queries */
 
-@media (max-width:756px){
+@media (max-width:764px){
     div.grow{
         width: 100%;
         display: flex;
@@ -169,11 +171,11 @@ footer.site-main-footer{
     }
 
     .site-main-footer{
-        padding: 0.3rem;
+        padding: 0.2rem;
     }
 
     footer.site-main-footer .author-name{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     footer.site-main-footer .author-contact a {
         display: flex;
@@ -181,7 +183,7 @@ footer.site-main-footer{
        
     }
     footer.site-main-footer .author-contact a span {
-        color: white;
+        color:black;
         border-bottom: 1px solid white;
        font-size: 0.7rem;
     }
