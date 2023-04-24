@@ -22,34 +22,70 @@ div.wrapper{
 
 
 /* css for header */
-
 .site-main-header{
+    display: flex;
+    flex-direction: column;
+    
+}
+.site-main-header .flex-header-child1{
     padding: 1rem;
     text-align: center;
-    font-size: 1.5rem;
-   
+    font-size: 1rem;
+  
+    border: 1px solid rgb(52, 52, 135) ;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
-    background-color: rgb(52, 52, 135);
+
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
+   width: 100%;
+
+   
 }
+
 .site-main-title{
-    color: white;
-    font-weight: normal;
+    color: black;
+      font-weight: normal;
+      
 }
 .site-main-header .change{
     font-size: 5rem;
     color: #c14e4e;
+    flex-grow: 1;
    
+     
 }
 .site-main-header .small{
     font-size: 1rem;
-    color: white;
-    align-self: flex-end; 
+    color:black;
+   /* align-self: flex-end;  */
+   display: block;
+ }
+
+.site-main-header .flex-header-child2{
+
+    text-align: center;
+    margin-top: 1rem;
 }
+
+.site-main-header .flex-header-child2 button{
+
+  margin-right: 1rem;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  
+}
+.site-main-header .flex-header-child2 button:hover{
+
+    margin-right: 1rem;
+    padding: 1rem;
+   
+    border: 1px solid rgb(52, 52, 135) ;
+   
+  }
 
 /* css for header ends here */
 
@@ -96,24 +132,43 @@ footer.site-main-footer{
  /* css for footer ends here */
 
  /* media queries for header and footer */
+/* media queries */
 
- @media (max-width:756px){
- 
+@media (max-width:756px){
+    div.grow{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      
+        padding: 0.5rem;
+    } 
+
     .site-main-header{
        
         font-size: 1rem; 
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
-
+    .site-main-header .site-main-title{
+        font-size: 1.5rem;
+    }
     .site-main-header .change{
         font-size: 3rem;    
     }
     .site-main-header .small{
         align-self: center; 
      }
-   
-     .site-main-footer{
+    .logo-container{
+        width: 5.5rem;
+        height: 5.5rem;
+        /* background-color: yellow; */
+    }
+    .logo-container img{
+        width: 100%;
+    }
+
+    .site-main-footer{
         padding: 0.3rem;
     }
 
@@ -140,21 +195,28 @@ footer.site-main-footer{
     }
 }
 
-@media (max-width:441px){
+@media (max-width:539px){
 
-    .site-main-header{
+     .site-main-header{
+       
+        font-size: 0.7rem; 
       
-       font-size: 0.7rem; 
-     
-       flex-direction: column;
-       align-items: center;
-   }
-
-   .site-main-header .change{
-       font-size: 2rem;    
-   }
-   .site-main-header .small{
-       align-self: center; 
+        flex-direction: column;
+        align-items: center;
     }
 
+    .site-main-header .flex-header-child1{
+        font-size: 0.7rem; 
+      
+        flex-direction: column;
+        align-items: center;
+    }
+    .site-main-header .change{
+        font-size: 2rem;    
+    }
+    .site-main-header .small{
+        align-self: center; 
+     }
+
 }
+

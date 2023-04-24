@@ -122,9 +122,7 @@ ul li span{
     font-size: 1rem;
   
 }
-ul li div{
-   
-}
+
 .imp--word{
     display: inline;
     /* color: blue; */
@@ -136,7 +134,7 @@ ul li div{
 /* fakta ruta */
 
 .fakta-ruta-box{
-    width: 50%;
+    width: 80%;
     background-color:orange;
     padding: 1rem;
     margin: 0 auto;
@@ -188,6 +186,11 @@ ul li div{
             }
  
           }
+
+          .fakta-ruta-box{
+            width: 100%;
+        }
+
 
           @media (min-width: 701px) {
            .flex-child1 {
