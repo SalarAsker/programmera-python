@@ -136,8 +136,8 @@
                             console.log(next);
                             prev.toUpperCase();
                             
-                            btnPrev.innerHTML =`Previous: ${prev.charAt(0).toUpperCase()}${prev.slice(1)}`;
-                            btnNext.innerHTML =`Next: ${next.charAt(0).toUpperCase()}${next.slice(1)}`;
+                            btnPrev.innerHTML =`&lt;&lt; ${prev.charAt(0).toUpperCase()}${prev.slice(1)}`;
+                            btnNext.innerHTML =`${next.charAt(0).toUpperCase()}${next.slice(1)} &gt;&gt;`;
                             
                             btnPrev.addEventListener('click', () =>{
                                 location.href = 'introduction.html?prev=forord&next=hellow World';

@@ -153,10 +153,12 @@
                             <h2 class="content-title-level2">Övningsprogram</h2>
                             <p class="content-paragraph">Du kan inte lära dig att programmera genom att läsa. Du måste prova själv och träna. Därför finns det många övningar i kursen. För att få ut det mesta av kursen bör du inte hoppa över övningarna, utan att göra dem när de dyker upp.</p>
                         </div>
+                    
                     <div class="pre-next">
-                        <button id="btnPrev">Previous:</button>
+                        <button id="btnPrev">&lt;</button>
                         <button id="btnNext">Next:</button>
                     </div>
+                    
                     <script>
                         const btnPrev = document.getElementById('btnPrev');
                         const btnNext = document.getElementById('btnNext');
@@ -172,8 +174,8 @@
                         console.log(next);
                         prev.toUpperCase();
                         
-                        btnPrev.innerHTML =`Previous: ${prev.charAt(0).toUpperCase()}${prev.slice(1)}`;
-                        btnNext.innerHTML =`Next: ${next.charAt(0).toUpperCase()}${next.slice(1)}`;
+                        btnPrev.innerHTML =`&lt;&lt;${prev.charAt(0).toUpperCase()}${prev.slice(1)}`;
+                        btnNext.innerHTML =`${next.charAt(0).toUpperCase()}${next.slice(1)}  &gt;&gt;`;
                         
                         btnPrev.addEventListener('click', () =>{
                             location.href = 'index.html';

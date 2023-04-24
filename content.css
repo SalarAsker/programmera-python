@@ -20,7 +20,7 @@
 
 .site-main-container .site-prog-content-container{
     /* background-color: lightcyan; */
-    width: 83%;
+    width: 80%;
   
 }
 /* css layout ends here */
@@ -150,12 +150,12 @@ ul li span{
     justify-content: space-between;
 }
     .pre-next button{
-        width: 200px;
-        padding: 1rem;
+        width: 15%;
+        padding: 0.5rem;
         border: none;
         background-color: rgb(52,52,135);
         color: white;
-        font-size: 1.5rem;
+        font-size: 1rem;
         cursor: pointer;
     }
 
@@ -212,3 +212,58 @@ ul li span{
    list main med line height dala
     
     */
+
+    /*  Media query for next and pre buttons */
+     @media (max-width: 1066px){
+        
+        .pre-next button{
+            width: 15%;
+            font-size: 0.8rem;
+            
+        }
+
+     }
+          @media (max-width: 853px){
+        
+        .pre-next {
+            justify-content: space-around;
+            
+        }
+          .pre-next button{
+            width: 18%;
+            font-size: 0.8rem;
+            
+        }
+
+     }
+
+     @media (max-width: 739px){
+        
+        .pre-next {
+            justify-content: center;
+            
+        }
+          .pre-next button{
+            width: 20%;
+            font-size: 0.8rem;
+            margin-right: 2%;
+            
+        }
+
+     }
+
+     @media (max-width: 487px){
+        
+        .pre-next {
+            flex-direction: column;
+            align-items: center;
+            
+        }
+          .pre-next button{
+            width: 100%;
+            font-size: 0.8rem;
+            margin-bottom: 2%;
+            
+        }
+
+     }

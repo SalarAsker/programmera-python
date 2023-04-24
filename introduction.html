@@ -159,8 +159,8 @@
                     </div>
                   
                 <div class="pre-next">
-                    <button id="btnPrev">Previous:</button>
-                    <button id="btnNext">Next:</button>
+                    <button id="btnPrev"></button>
+                    <button id="btnNext"></button>
                 </div>
                 
                     <script>
@@ -178,8 +178,8 @@
                             console.log(next);
                             prev.toUpperCase();
                             
-                            btnPrev.innerHTML =`Previous: ${prev.charAt(0).toUpperCase()}${prev.slice(1)}`;
-                            btnNext.innerHTML =`Next: ${next.charAt(0).toUpperCase()}${next.slice(1)}`;
+                            btnPrev.innerHTML =`&lt;&lt; ${prev.charAt(0).toUpperCase()}${prev.slice(1)}`;
+                            btnNext.innerHTML =`${next.charAt(0).toUpperCase()}${next.slice(1)} &gt;&gt;`;
                             
                             btnPrev.addEventListener('click', () =>{
                                 location.href = 'forord.html?prev=start&next=introduction';
