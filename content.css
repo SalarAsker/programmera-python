@@ -102,10 +102,12 @@
   margin-top: 2rem;
   margin-bottom: 1rem;
   border-bottom: 1px solid  rgb(52, 52, 135);
+  font-size:2rem ;
 }
 .content-title-level2{
     margin-top: 2rem;
     margin-bottom: 1rem;
+    font-size:1.5rem ;
 }
 ul{
     list-style-type: none;
@@ -266,4 +268,10 @@ ul li span{
             
         }
 
+        .content-title-level1{
+            font-size: 1.5rem;
+        }
+        .content-title-level2{
+            font-size: 1.2rem;
+        }
      }
