@@ -25,10 +25,10 @@
                 <span class="small">Grund programmering kurs</span>
                
             </div>
-            <div  class="flex-header-child2">
+            <!-- <div  class="flex-header-child2">
                 <button>Om kursen</button>
                 <button>Om läraren</button>
-            </div>
+            </div> -->
     </header><!-- site header ends here -->
 
         <main class="site-main">
@@ -38,11 +38,11 @@
                     <nav>
                         <ul class="navigations-ul">
                             <li><a href="index.html">Start sida</a> </li>
-                            <li><a href="forord.html?prev=start&next=introduction">Förord</a> </li>
+                            <li><a href="forord.html?prev=start&next=introduktion">Förord</a> </li>
                             
-                            <li><a href="introduction.html?prev=forord&next=helloworld">Introduktion</a></li>
+                            <li><a href="introduction.html?prev=förord&next=hello world">Introduktion</a></li>
                             
-                            <li><a href="helloworld.html?prev=introduction&next=variabler">Hello World program</a></li>
+                            <li><a href="helloworld.html?prev=introduktion&next=variabler">Hello World program</a></li>
                             <li><a href="">Variabler</a></li>
                             <li><a href="">Datatyper</a></li>
                             <li><a href="">If satser</a></li>
@@ -175,18 +175,19 @@
                             const prev = urlParams.get('prev')
                             const next = urlParams.get('next');
                             
+                            console.log(prev);
                             console.log(next);
                             prev.toUpperCase();
                             
-                            btnPrev.innerHTML =`&lt;&lt; ${prev.charAt(0).toUpperCase()}${prev.slice(1)}`;
-                            btnNext.innerHTML =`${next.charAt(0).toUpperCase()}${next.slice(1)} &gt;&gt;`;
+                            btnPrev.innerHTML =`<i class="fa-solid fa-circle-chevron-left fa-fade"></i> <span> ${prev.charAt(0).toUpperCase()}${prev.slice(1)}</span>  `;
+                        btnNext.innerHTML =`<i class="fa-solid fa-circle-chevron-right fa-fade"></i> <span>${next.charAt(0).toUpperCase()}${next.slice(1)} </span> `;
                             
                             btnPrev.addEventListener('click', () =>{
-                                location.href = 'forord.html?prev=start&next=introduction';
+                                location.href = 'forord.html?prev=start&next=introduktion';
                             })
                             
                             btnNext.addEventListener('click', () =>{
-                                location.href = 'helloworld.html?prev=introduction&next=variabler';
+                                location.href = 'helloworld.html?prev=introduktion&next=variabler';
                             })
 
                         </script>

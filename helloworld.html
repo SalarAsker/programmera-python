@@ -25,10 +25,10 @@
                 <span class="small">Grund programmering kurs</span>
                
             </div>
-            <div  class="flex-header-child2">
+            <!-- <div  class="flex-header-child2">
                 <button>Om kursen</button>
                 <button>Om läraren</button>
-            </div>
+            </div> -->
     </header> <!-- site header ends here -->
 
         <main class="site-main">
@@ -90,7 +90,7 @@
                                        
                  
                        
-                        <h2 class="content-title-level2">Köra Python</h2>
+                        <h2 class="content-title-level1">Köra Python</h2>
                         <p class="special-tag">------Ditt första program</p>
                         <p class="content-paragraph">För att kunna programmera i Python behöver man Python installerat på sin dator och  ett program där man skriver och kör koden ifrån (ett så kallat IDE).</p>
 
@@ -132,12 +132,12 @@
                             
                             const prev = urlParams.get('prev')
                             const next = urlParams.get('next');
-                            
-                            console.log(next);
+                            console.log(prev);
+                            console.log(next);  
                             prev.toUpperCase();
                             
-                            btnPrev.innerHTML =`&lt;&lt; ${prev.charAt(0).toUpperCase()}${prev.slice(1)}`;
-                            btnNext.innerHTML =`${next.charAt(0).toUpperCase()}${next.slice(1)} &gt;&gt;`;
+                            btnPrev.innerHTML =`<i class="fa-solid fa-circle-chevron-left fa-fade"></i> <span> ${prev.charAt(0).toUpperCase()}${prev.slice(1)}</span>  `;
+                        btnNext.innerHTML =`<i class="fa-solid fa-circle-chevron-right fa-fade"></i> <span>${next.charAt(0).toUpperCase()}${next.slice(1)} </span> `;
                             
                             btnPrev.addEventListener('click', () =>{
                                 location.href = 'introduction.html?prev=forord&next=hellow World';

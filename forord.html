@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/b17d87631c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="header-footer.css">
     <link rel="stylesheet" href="content.css">
     <title>Välkommen</title>
@@ -23,10 +24,10 @@
                 <span class="small">Grund programmering kurs</span>
                
             </div>
-            <div  class="flex-header-child2">
+            <!-- <div  class="flex-header-child2">
                 <button>Om kursen</button>
                 <button>Om läraren</button>
-            </div>
+            </div> -->
     </header> <!-- site header ends here -->
 
 
@@ -37,9 +38,9 @@
                     <nav>
                         <ul class="navigations-ul">
                             <li><a href="index.html">Start sida</a> </li>
-                            <li><a href="forord.html?prev=start&next=introduction">Förord</a> </li>
-                            <li><a href="introduction.html?prev=forord&next=helloworld">Introduktion</a></li>
-                            <li><a href="helloworld.html?prev=introduction&next=variabler">Hello World program</a></li>
+                            <li><a href="forord.html?prev=start&next=introduktion">Förord</a> </li>
+                            <li><a href="introduction.html?prev=förord&next=hello%world">Introduktion</a></li>
+                            <li><a href="helloworld.html?prev=introduktion&next=variabler">Hello World program</a></li>
                             <li><a href="">Variabler</a></li>
                             <li><a href="">Datatyper</a></li>
                             <li><a href="">If satser</a></li>
@@ -68,8 +69,8 @@
                         <nav>
                             <ul class="navigations">
                                 <li><a href="index.html">Start sida</a> </li>
-                                <li><a href="forord.html?prev=start&next=introduction">Förord</a> </li>
-                                <li><a href="introduction.html?prev=forord&next=helloworld">Introduktion</a></li>
+                                <li><a href="forord.html?prev=start&next=introduktion">Förord</a> </li>
+                                <li><a href="introduction.html?prev=förord&next=helloworld">Introduktion</a></li>
                                 <li><a href="">Hello World program</a></li>
                                 <li><a href="">Variabler</a></li>
                                 <li><a href="">Datatyper</a></li>
@@ -144,7 +145,11 @@
                             <div class="fakta-ruta-container">
                                 <div class="fakta-ruta-box">
                                     <span class="fakta-ruta-title">Faktaruta</span> <br>
-                                    <span class="fakta-ruta-text">Visar viktiga moment. Fungerar som snabbreferens.</span>
+                                    <span class="fakta-ruta-text">
+                                        Visar viktiga moment. Fungerar som snabbreferens.</span>
+                                        <i class="fa-regular fa-angles-left "></i>
+                                        <i class="fa-regular fa-user"></i>
+                                        <i class="fa-solid fa-circle-chevron-left"></i>
                                 </div>
                             </div>
                             <!-- fakta ruta code -->
@@ -155,7 +160,7 @@
                         </div>
                     
                     <div class="pre-next">
-                        <button id="btnPrev">&lt;</button>
+                        <button id="btnPrev"></button>
                         <button id="btnNext">Next:</button>
                     </div>
                     
@@ -168,21 +173,23 @@
                         const urlParams = new URLSearchParams(queryString);
                         console.log(urlParams);
                         
-                        const prev = urlParams.get('prev')
-                        const next = urlParams.get('next');
-                        
-                        console.log(next);
+                        const prev = urlParams.get('prev');   console.log(prev+" vad");
+                        const next = urlParams.get('next');    console.log(next);
+                       
+                      
+                     
+                      
                         prev.toUpperCase();
                         
-                        btnPrev.innerHTML =`&lt;&lt;${prev.charAt(0).toUpperCase()}${prev.slice(1)}`;
-                        btnNext.innerHTML =`${next.charAt(0).toUpperCase()}${next.slice(1)}  &gt;&gt;`;
+                        btnPrev.innerHTML =`<i class="fa-solid fa-circle-chevron-left fa-fade"></i> <span> ${prev.charAt(0).toUpperCase()}${prev.slice(1)}</span>  `;
+                        btnNext.innerHTML =`<i class="fa-solid fa-circle-chevron-right fa-fade"></i> <span>${next.charAt(0).toUpperCase()}${next.slice(1)} </span> `;
                         
                         btnPrev.addEventListener('click', () =>{
                             location.href = 'index.html';
                         })
                         
                         btnNext.addEventListener('click', () =>{
-                            location.href = 'introduction.html?prev=forord&next=helloworld';
+                            location.href = 'introduction.html?prev=förord&next=hello world';
                         })
 
                     </script>
@@ -190,7 +197,7 @@
             </div>
 
         </main>
-
+      
 
       <!-- site footer starts here -->
         <footer class="site-main-footer">
