@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&family=Source+Code+Pro&display=swap');
 /* css layout */
 .site-main{
     width: 90%;
@@ -138,10 +140,13 @@ ul li div{
 .imp--word{
     display: inline;
     color: rgba(226, 46, 46, 0.941);
-    /* font-weight: bold; */
-    /* font-size: 1rem; */
-    /* font-weight: normal; */
-    /* font-style: italic; */
+   
+}
+.imp--word--blue{
+    display: inline;
+    color: rgb(38, 38, 154);
+    background-color: #f5f5f5;
+    padding: 2px;
 }
 
 /* fakta ruta */
@@ -201,6 +206,36 @@ ul li div{
     }
 
 /* site images */
+
+/* code block css */
+.language-python {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-left: 3px solid  rgb(52, 52, 135);
+    font-family: 'Source Code Pro', monospace;
+    margin-bottom: 1rem;
+    
+}
+.python-keyword {
+    color: blue;
+}
+.python-string{
+    color: #96261f;
+}
+/* code block css */
+
+/* code result block css */
+
+.language-python-result{
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-left: 3px solid  green;
+    font-family: 'Source Code Pro', monospace;
+    margin-bottom: 1rem;
+}
+
+
+
         @media (max-width: 700px) {
             .site-main-container .site-sidebar-container{
               display: none;
