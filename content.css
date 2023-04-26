@@ -149,19 +149,30 @@ ul li div{
     padding: 2px;
 }
 
-/* fakta ruta */
+/*fakta ruta START*/
 
 .fakta-ruta-box{
     width: 80%;
-    background-color:orange;
+    /* background-color:orange; */
+    background-color: #f5f5f5;
     padding: 1rem;
     margin: 0 auto;
     border: 1px solid  rgb(52, 52, 135);
+    border-radius: 10px;
+    margin-bottom: 1rem;
 }
 .fakta-ruta-title{
     border-bottom: 1px solid rgb(52,52,135);
     display: block;
+    padding: 0.5rem;
 }
+.fakta-ruta-text{
+    display: block;
+}
+.fa-star{
+    color:  rgb(52,52,135);
+}
+/*fakta ruta END*/
 /* css pre next buttons */
 .pre-next{
     display: flex;
