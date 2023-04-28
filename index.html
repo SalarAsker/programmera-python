@@ -138,6 +138,49 @@
             display: none;
         }
     }
+
+    /* loader */
+   .login-form{
+    /* display: none; */
+   }
+    .page__loader{
+        width: 35%;
+        height: 35%;
+        /* background-color: yellow; */
+        display: flex;
+            justify-content: center;
+            align-items: center;
+           
+    }
+    .page__loader__container{
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
+    }
+    .visible{
+        display: none;
+    }
+    .loader{
+        width: 100px;
+        height: 100px;
+       
+        border:0.5rem solid lightgray;
+        border-top:0.5rem solid gray;
+        border-radius: 50%;
+        -webkit-animation: spin 2s linear infinite; /* Safari */
+        animation: spin 2s linear infinite;
+    }
+
+            /* Safari */
+        @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+        }
+
+        @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+        }
     </style>
 </head>
 <body>
@@ -192,7 +235,13 @@
             </div>
         </form>
     </div>
+
     
+        <div class="page__loader visible">
+            <div class="page__loader__container">
+                <div class="loader"> </div>
+            </div>
+        </div>
 
 </body>
 </html>

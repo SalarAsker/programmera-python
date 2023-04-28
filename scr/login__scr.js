@@ -11,7 +11,17 @@ login__btn.addEventListener('click', (e) => {
     const pass = document.getElementById('user__pass').value;
     console.log(`${user} ${pass}`);
     if(u === user && p === pass){
-        location.href = `course/startsida.html`;
+
+       document.querySelector('.login-form').style.display = `none`;
+       document.querySelector('.page__loader').classList.remove('visible');
+       
+        setTimeout(() => {
+            location.href = `course/startsida.html`;
+        }, 1000);
+        
+        
+
+
     }else{
         const err = document.querySelector('.error');
         err.style.display = `block`;
