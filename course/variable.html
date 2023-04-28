@@ -90,10 +90,93 @@
                    <div class="flex-child3">
 
                       <h1 class="content-title-level1">Variabler</h1>
-                      <p class="content-paragraph">------Från och med denna modul börjar du arbeta med datan. Du lär dig skapa och använda variabler i Python. En variabel är en reserverad plats i datorns arbetsminne som innehåller ett värde av en specifik typ.</p>
-                            <p class="content-paragraph">I editorn skriver du in koden:</p>
+                      <p class="special-tag">------Att arbeta med data.</p>
+                      <p class="content-paragraph" style="font-style: italic;">Från och med denna modul börjar du arbeta med datan. Du lär dig skapa och använda variabler i Python. En variabel är en reserverad plats i datorns arbetsminne som innehåller ett värde av en specifik typ.</p>
+                    
+                      <p class="content-paragraph">Man brukar säga att skolans grundläggande uppgift är att lära eleverna läsa, skriva och räkna. På sätt och vis gäller samma sak för programmering. Det man måste lära sig först är hur man konstruerar program som kan läsa, skriva och räkna. I denna modul ska vi se hur man kan räkna. För att kunna göra detta måste vi också lära oss hur man läser in de tal man ska räkna och hur man skriver ut de resultat man får. </p>
+                      <p class="content-paragraph">För att kunna räkna behöver ett program använda så kallade variabler. Därför inleds denna modul med en beskrivning av hur man skapar sådana och ger dem värden. </p>
+                      
+                      <h2 class="content-title-level2">Variabler</h2>
+                      <p class="content-paragraph">När man räknar ut något kan man ibland inte göra hela beräkningen på en gång, utan man måste räkna ut en sak i taget. Efter varje steg får man ett mellanresultat. Man måste komma ihåg mellan resultaten eftersom man behöver dem för att räkna ut slutresultatet. Använder man papper och penna är detta inget problem; man skriver helt enkelt ner mellan resultaten. </p>
+                      <p class="content-paragraph">Även i ett datorprogram måste beräkningar kunna utföras stegvis och man måste kunna spara mellanresultat för att kunna använda dem senare. Då använder man variabler. En variabel är en minnesplats i datorn för att spara undan data till ett senare tillfälle. Man kan ha många variabler i ett program och för att hålla reda på dem ger man dem därför namn. </p>
+                       <!-- faktaruta code -->
+                       <div class="fakta-ruta-container">
+                        <div class="fakta-ruta-box">
+                            <span class="fakta-ruta-title">En variabel</span> <br>
+                            <span class="fakta-ruta-text"><i class="fa-regular fa-star fa-fade"></i> lagrar värden i minnet för senare åtkomst. </span> <br>
+                            <span class="fakta-ruta-text"><i class="fa-regular fa-star fa-fade"></i> har ett namn. </span> <br>
+                        </div>
+                    </div>
+                    <!-- fakta ruta code -->
+                      <p class="content-paragraph">Instruktionerna som man skriver i Python och även i andra språk kallas för satser (statements). I normala fall skriver man en sats per rad. Den satsen som används för att skapa en variabel kallas för tilldelningssatsen (assignment statement). Den skapar en variabel och lagrar ett värde i den. </p>
+                      <p class="content-paragraph">Om man till exempel skapa en variabel med namnet counter och ge variabeln värdet 5, skriver man,</p>
+                       <!-- code block -->
+                     <div class="language-python">
+                        <!-- <span class="python-keyword">print</span>
+                        <span class="python-punctuation">(</span>
+                        <span class="python-string">'Hello World'</span>
+                        <span class="python-punctuation">)</span> -->
+                        <span class="python-punctuation">counter = 5</span>
+                       
+                     </div>
+                     <!-- code block -->
+                      
+                      <p class="content-paragraph">När denna sats har utförts kan man tänka sig att det ser ut som i figuren nedanför, </p>
+                      <div class="variable-container" style="padding:5px; text-align: center;">
+                        <div class="counter">counter</div>
+                        <div class="variable-value" style="border:1px solid black;display:inline-block;padding:1rem 3rem 1rem 3rem;margin: 5px 0;background-color: lightgreen;">5</div>
+                        <div class="variable-last">i datornsminnet</div>
+                      </div>
+                      
+                      <p class="content-paragraph">Det blev en plats i datorminnet och i den lagrades värdet 5. Variabeln namn counter är kopplat till platsen. Skulle man nå dit och hämta värdet 5 så använder man namnet counter.</p>
+                      <p class="content-paragraph">Koda följande program i en Python-fil och köra programmet.</p>
 
-               
+
+                        <!-- code block -->
+                     <div class="language-python">
+                        <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">counter = 5</span> <br>
+                         <span class="python-keyword">print</span><span class="python-punctuation">(</span><span >counter</span><span class="python-punctuation">)</span>     
+                     </div>
+                     <!-- code block -->
+                     
+                     <p class="content-paragraph">Om man kör programmet blir resultatet 5. </p>
+                       <!-- code result block START -->
+                       <div class="language-python-result">
+                        
+                        <div >
+                            <span >5</span>
+                        </div>
+                       
+                     </div>
+                     <!-- code result block END-->
+                     
+                     <p class="content-paragraph">I print-metoden skriver vi ut variabeln counter. counter innehåller värdet 5 så ser man detta i utskriften.</p>
+                     <p class="content-paragraph">Likhetstecken ( = ) i programmering har en annan betydelse än matematiken. I programmering betyder det tilldelningen. Tilldelningen sker alltid åt vänster, alltså, det som finns på höger sida av likhetstecken tilldelas i den som finns på vänster sida.</p>
+                     <p class="content-paragraph">Vi kan addera två tal och lagra resultatet i en variabel, </p>
+
+                       <!-- code block -->
+                       <div class="language-python">
+                        <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">summa = 10 + 20</span> <br>
+                         <span class="python-keyword">print</span><span class="python-punctuation">(</span><span >summa</span><span class="python-punctuation">)</span>     
+                     </div>
+                     <!-- code block -->
+                     <p class="content-paragraph"> Printar man ut summa, ser man 30 i utskriften. </p>
+                     <p class="content-paragraph"> I ett program brukar man skapa flera variabler och utföra flera operationer. Följande program demonstrerar ett samspel mellan flera variabler. Programmet adderar tre variabler och printar deras summa ut. Därefter räknar programmet ut ett medelvärde. </p>
+                      <!-- code block -->
+                      <div class="language-python">
+                        <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">nummer1 = 10</span> <br>
+                        <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">nummer2 = 20</span> <br>
+                        <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">nummer3 = 33</span> <br>
+                        <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">summa = nummer1 + nummer2 + nummer3 </span> <br>
+                       
+                         <span class="python-keyword" style="margin-bottom: 5px;display: inline-block;">print</span><span class="python-punctuation">(</span><span >summa</span><span class="python-punctuation">)</span><br>
+                         <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">medel = summa/3</span> <br>
+                         <span class="python-keyword">print</span><span class="python-punctuation">(</span><span >medel</span><span class="python-punctuation">)</span><br>
+                     </div>
+                     <!-- code block -->
+
+                     
+
            
                 
              
