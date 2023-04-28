@@ -30,6 +30,3 @@ pass__textbox.addEventListener('focus', () =>{
     const err = document.querySelector('.error');
         err.style.display = `none`;
 })
-
-
-
