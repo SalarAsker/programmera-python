@@ -1,72 +1,111 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <link rel="stylesheet" href="index-main-style.css">
-   
-    <title>Start</title>
+    <script src="scr/login__scr.js" defer></script>
+  
+    <title>Python</title>
+    <style>
+          @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        body{
+            
+            width: 100vw;
+            height: 100vh;
+            /* background-color: yellow; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-flex-cont{
+            width: 35%;
+            /* height: 39%; */
+            /* background-color: aqua; */
+            padding: 1rem;
+           background-color:  #f5f5f5;
+        }
+        .title{
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid black;
+        }
+        label, span{
+            /* display: flex; */
+            margin-left: 3px;
+        }
+        .user__account__area, .user__pass__area, .submit__login{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-bottom: 1rem;
+
+        }
+        .user__account__area > label, .user__pass__area > label{
+            flex:1;
+            font-size: 1.1rem;
+        }
+        .user__account__area > input, .user__pass__area > input{
+            flex:2;
+            padding: 0.4rem;
+            /* border: none; */
+            
+        }
+        input:focus{
+            outline-style: none;
+        }
+        .submit__login input{
+            width: 20%;
+            padding: 0.3rem;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .error{
+            background-color: rgb(227, 145, 145);
+            text-align: center;
+            padding: 0.3rem;
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    <div class="wrapper">
-        <header class="site-main-header">
-           
-                <div class="flex-header-child1">
-                    <h1 class="site-main-title">Lär dig <br> programmera  </h1>
-                    <div>
-                        <span class="change">Python</span>
-                    
-                    </div>
-                    <span class="small">Grund programmering kurs</span>
-                   
-                </div>
-                <div  class="flex-header-child2">
-                    <button>Om kursen</button>
-                    <button>Om läraren</button>
-                </div>
-        </header>
-        <main class="site-main-content">
-           
-            <div class="grow">
-                <div class="description-container">
-                    <p class="site-main-description">
-                        Alltmer i vårt samhälle byggs upp av kod och även om alla inte vill bli programmerare så kan det vara bra att lära sig förstå hur kod fungerar. I denna kurs provar vi på textbaserad programmering i Python, ett av världens mest populära programmeringsspråk
-                    </p>
-                    <p class="site-main-description">
-                        Inga förkunskaper krävs. Kursen är riktad till vuxna och ungdomar som har lite datorvana sedan innan.
-                    </p>
-                </div>
-                <div class="click-to-enter">
-                    <button class="start-course">Starta kursen</button>
-                    <span>Kursen är gratis!</span>
-                    <span>Du lär dig på egen hand!</span>
-                    <span>För handledning och privata lektioner, <a href="">läs här!</a></span>
-                </div>
+    
+    <div class="login-form form-flex-cont">
+        <p class="title">
+            Python course portal login
+        </p>
+        <form action="course/startsida.html" method="post">
+            
+            <div class="user__account__area">
+                <label for="user">User Id</label>
+                <input type="text" name="pass" id="user__name" 
+                autofocus
+                placeholder="User id">
+                <span class="user__name__obli" style="color:red">*</span>            
             </div>
-        </main>
-
-        <footer class="site-main-footer">
-            <p class="footer-description">Kursen skapats av</p>
-            <p class="author-name">Salar Asker Zada</p>
-            <p>Leg. programmerings lärare</p>
-            <p class="author-contact"> 
-                <a href="mailto:salarmeer@gmail.com"> 
-                    <i class="fa-solid fa-at"></i> <span>Kontakta om du vill ha privat undervisning</span></a> 
-            </p>
-        </footer>
+            <div class="user__pass__area">
+                <label for="pass">User Password</label>
+                <input type="password" name="pass" id="user__pass"
+                placeholder="User password">
+                <span class="user__pass__obli" style="color:red">*</span>
+            </div>
+            <div class="submit__login">
+                <input type="submit" value="Log in" id="log__btn">
+            </div>
+            <div class="error">
+                <span class="user__pass__error">User-id or the password is not correct.</span>
+            </div>
+        </form>
     </div>
-
-        <script>
-            const btnStart = document.querySelector('.start-course');
-            console.log(btnStart);
-            btnStart.addEventListener('click', () =>{
-
-                location.href = 'forord.html?prev=start&next=introduktion';
-            })
-        </script>
+    
 
 </body>
 </html>
