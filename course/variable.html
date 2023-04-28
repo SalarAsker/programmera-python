@@ -42,8 +42,8 @@
                             <li><a href="introduction.html?prev=förord&next=Köra Python">Introduktion</a></li>
                             <li><a href="runpython.html?prev=introduction&next=hello world">Köra Python</a></li>
                             <li><a href="helloworld.html?prev=Köra python&next=variabler">Hello World program</a></li>
-                            <li><a href="variable.html?prev=hello world&next=datatyper">Variabler</a></li>
-                           
+
+                            <li><a href="">Variabler</a></li>
                             <li><a href="">Datatyper</a></li>
                             <li><a href="">If satser</a></li>
                             <li><a href="">Iterationssatser</a></li>
@@ -75,8 +75,8 @@
                             <li><a href="introduction.html?prev=förord&next=Köra Python">Introduktion</a></li>
                             <li><a href="runpython.html?prev=introduction&next=hello world">Köra Python</a></li>
                             <li><a href="helloworld.html?prev=Köra python&next=variabler">Hello World program</a></li>
-                            <li><a href="variable.html?prev=hello world&next=datatyper">Variabler</a></li>
-                               
+                            <li><a href="helloworld.html?prev=hello world&next=datatyper">Variabler</a></li>
+
                                 <li><a href="">Datatyper</a></li>
                                 <li><a href="">If satser</a></li>
                                 <li><a href="">Iterationssatser</a></li>
@@ -89,75 +89,26 @@
 
                    <div class="flex-child3">
 
-                                       
-                 
-                       
-                        <h2 class="content-title-level1">Köra Python</h2>
-                        <p class="special-tag">------Att skapa Repl.it konto och Python fil</p>
+                      <h1 class="content-title-level1">Variabler</h1>
+                      <p class="content-paragraph">------Från och med denna modul börjar du arbeta med datan. Du lär dig skapa och använda variabler i Python. En variabel är en reserverad plats i datorns arbetsminne som innehåller ett värde av en specifik typ.</p>
+                            <p class="content-paragraph">I editorn skriver du in koden:</p>
 
-                        <p class="content-paragraph" style="font-style: italic;">I denna modul ska du konfigurera ett Repl.it konto och skapa en Python fil.</p> 
-
-                        <p class="content-paragraph">För att kunna programmera i Python behöver man Python installerat på sin dator och  ett program där man skriver och kör koden ifrån (ett så kallat IDE, som står för <span class="imp--word">Integrated Development Environment</span>).</p>
-
-                        <p class="content-paragraph">Det finns däremot andra alternativ som gör det möjligt att man kan programmera i Python online i ett molnbaserat system. Fördelen med att programmera online är att man börjar koda med en gång utan att installera Python och konfigurera programmet IDE. Idag finns massor av sådana online system man kan välja. Om man skulle nämna några så är det <span class="imp--word">Google Colab</span> och <span class="imp--word">Repl.it</span>. </p>
-
-                        <p class="content-paragraph">
-                            I den här kursen ska vi progammera i <span class="imp--word">Repl.it</span>. Det är ett simidigt molnsystem och man blir igång direkt efter ha skapat ett konto.
+               
+           
+                
+             
+                      <!-- faktaruta code -->
+                      <div class="fakta-ruta-container">
+                        <div class="fakta-ruta-box">
+                            <span class="fakta-ruta-title">print() funktion</span> <br>
+                            <span class="fakta-ruta-text"><i class="fa-regular fa-star fa-fade"></i> print() är en standard utskriftsfunktion i Python.</span> <br>
+                            <span class="fakta-ruta-text"><i class="fa-regular fa-star fa-fade"></i> print() kan ta en eller fera texter som argument. Om det finns flera texter, måste dem vara åtskilda av ett kommatecken. </span> <br>
+                            <span class="fakta-ruta-text"><i class="fa-regular fa-star fa-fade"></i> print() sats lägger en ny rad i utskriften. </span><br>
                             
-                        <p class="content-paragraph">På <span class="imp--word">Repl.it</span> kan man även koda utan att skapa ett konto. Men om du vill spara ditt arbete så krävs det att du skapar ett användarkonto på <span class="imp--word">Repl.it</span>. Jag rekommenderar att du skapar ett användarkonto på <span class="imp--word">Repl.it</span> (ett användarkonto på Replit kostar inget men man får begränsad lagring på 500MB)</p>
-                        
-                        <p class="content-paragraph">Klick på följande länk som tar dig till Replit sidan.</p>
-                        <p class="content-paragraph"> <a href="https://replit.com/" target="_blank" style="color:blue">https://replit.com/</a> </p>
-                        <p class="content-paragraph">Klick <span class="imp--word">Sign Up</span> om du inte har användarkontot.</p>
-                        <div class="image-container" style="width: 100%;">
-                            <img src="../res/replit-start.png" alt="">
+                            <span class="fakta-ruta-text"><i class="fa-regular fa-star fa-fade"></i> Om man vill att nästa utskrift ska fortsätta på samma rad kan man ange <span class="imp--word--blue">end='&nbsp;&nbsp;'</span> som sista argument</span>
                         </div>
-                        
-                        <p class="content-paragraph">Om du redan har ett Google eller Github konto kan du logga in utan att registrera ett nytt konto. Alternativt kan du registrera ett nytt konto geonm att klicka på <span class="imp--word">Continue with email.</span></p>
-                        <div class="image-container" style="width: 100%;">
-                            <img src="../res/replit-account.png" alt="">
-                        </div>
-
-                        <p class="content-paragraph">Ange ett giltigt mejl-adress, välj ett lösenord och klick på <span class="imp--word">Create Account.</span></p>
-                        <div class="image-container" style="width: 100%;">
-                            <img src="../res/replit-acc-final.png" alt="">
-                        </div>
-
-                        <p class="content-paragraph">Efter du skapat ett konto och inloggat i <span class="imp--word">Repl.it</span> kommer du mötas av följande vy (du kan stanna lite här och bekanta dig med olika funktioner) <br>
-                            För att kunna skapa en Python fil ska du antingen klicka på <span class="imp--word">plus-tecknet längst upp till höger</span> eller välja <span class="imp--word">Create Repl</span> alternativ till vänster. Se markerade delar på bilden nedan,
-                        </p>
-                        <div class="image-container" style="width: 100%;">
-                            <img src="../res/replit-in.png" alt="">
-                        </div>
-
-                       <p class="content-paragraph">Nä man klickar på <span class="imp--word">Create Repl</span>, kommer det upp en ruta som den står i bilden nedanför. I rutan som dyker upp ska du göra följande,
-                        
-                        <p style="margin-bottom: 10px;">1:&nbsp;Välj Python från listan,</p>
-                        <p style="margin-bottom: 10px;">2:&nbsp;Döp filen till HelloWorld,</p>
-                        <p style="margin-bottom: 10px;">3:&nbsp;Klick Create Repl.</p>
-                        
-                        </p>
-                        <div class="image-container" style="width: 100%;">
-                            <img src="../res/replit-open.png" alt="">
-                        </div>
-                        
-                        <p class="content-paragraph">That's it! Nu har du öppnat en Python-fil, Grattis! Du ska mötas av en ny vy som du kan också se i bilden nedan. Notera gärna markeringar i bilden. Det finns fyra viktiga delar som du behöver att ha någorlunda bra uppfattning av, 
-                            
-                           
-                            <p style="margin-bottom: 10px;">1:&nbsp;Är namn på filen.</p>
-                           
-                            <p style="margin-bottom: 10px; line-height: 1.5rem;">2:&nbsp;Är texteditorn. Du ska skriva Python-satser här. Denna editor fungerar på ett liknande sätt som editorn i IDE programmet. Den hjälper oss genom att erbjuda exempelvis syntax highlighting och auto complete.</p>
-                            <p style="margin-bottom: 10px;">3:&nbsp;Är konsolen. I konsolen visas resultat som skrivs ut av våra program.</p>
-                            <p style="margin-bottom: 10px;">4:&nbsp;Är kör-knappen. Med denna knapp kör vi koden.</p>
-                        
-                        </p>
-                        <div class="image-container" style="width: 100%;">
-                            <img src="../res/repl-final.png" alt="">
-                        </div>
-
-                    
-                      <p class="content-paragraph" style="text-align: center; font-style: italic;">Du har konfigurerat programmmet <span class="imp--word">Repl.it</span> och det är dags för att skriva och studera ett första datorprogram. Klick näst, där du ska skriva ditt första <span class="imp--word">Hello World</span> program</p>
-        
+                    </div>
+                    <!-- fakta ruta code -->
                 
                 
                     </div> <!-- flex child3 div ends here -->
@@ -185,11 +136,11 @@
                         btnNext.innerHTML =`<i class="fa-solid fa-circle-chevron-right fa-fade"></i> <span>${next.charAt(0).toUpperCase()}${next.slice(1)} </span> `;
                             
                             btnPrev.addEventListener('click', () =>{
-                                location.href = 'introduction.html?prev=forord&next=Kör Python';
+                                location.href = 'helloworld.html?prev=köra python&next=variabler';
                             })
                             
                             btnNext.addEventListener('click', () =>{
-                                location.href = 'helloworld.html?prev=Kör Python&next=variabler';
+                                location.href = 'datatypes.html?prev=variabler&next=dontknow';
                             })
 
                         </script>
