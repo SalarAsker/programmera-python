@@ -38,13 +38,16 @@
                     <nav>
                         <ul class="navigations-ul">
                             <li><a href="startsida.html">Start sida</a> </li>
-                            <li><a href="forord.html?prev=start&next=introduktion">Förord</a> </li>
-                            <li><a href="introduction.html?prev=förord&next=Köra Python">Introduktion</a></li>
-                            <li><a href="runpython.html?prev=introduction&next=hello world">Köra Python</a></li>
-                            <li><a href="helloworld.html?prev=Köra python&next=variabler">Hello World program</a></li>
+                                <li><a href="forord.html?prev=start&next=introduktion">Förord</a> </li>
+                                <li><a href="introduction.html?prev=förord&next=Köra Python">Introduktion</a></li>
+                                <li><a href="runpython.html?prev=introduction&next=hello world">Köra Python</a></li>
+                                <li><a href="helloworld.html?prev=Köra python&next=variabler">Hello World program</a></li>
+                                <li><a href="variable.html?prev=hello world&next=datatyper">Variabler</a></li>
+                                <li><a href="datatypes.html?prev=variabler&next=input output">Datatyper</a></li>
+                                <li><a href="inputoutput.html?prev=data types&next=math modul">Input Output</a></li>
 
-                            <li><a href="">Variabler</a></li>
-                            <li><a href="">Datatyper</a></li>
+                          
+                           
                             <li><a href="">If satser</a></li>
                             <li><a href="">Iterationssatser</a></li>
                             <li><a href="">Sträng hantering</a></li>
@@ -77,6 +80,7 @@
                                 <li><a href="helloworld.html?prev=Köra python&next=variabler">Hello World program</a></li>
                                 <li><a href="variable.html?prev=hello world&next=datatyper">Variabler</a></li>
                                 <li><a href="datatypes.html?prev=variabler&next=input output">Datatyper</a></li>
+                                <li><a href="inputoutput.html?prev=data types&next=math modul">Input Output</a></li>
 
                                 
                                 <li><a href="">If satser</a></li>
@@ -92,9 +96,144 @@
 
                     <h1 class="content-title-level1">Datatyper</h1>
                     <p class="special-tag">------Att förstå olike typer av data i Python.</p>
-                    <p class="content-paragraph" style="font-style: italic;">Från och med denna modul börjar du arbeta med datan. Du lär dig skapa och använda variabler i Python. En variabel är en reserverad plats i datorns arbetsminne som innehåller ett värde av en specifik typ.</p>
+                    <p class="content-paragraph" style="font-style: italic;">?????????????????????????????</p>
                      
+                    <p class="content-paragraph" >En datatyp är, som det låter, en beskrivning av vilken sorts data en variabel innehåller, vilket kan vara exempelvis en siffra (heltal, flyttal), textsträng (vanlig text) eller en boolean (true/false eller etta/nolla).</p>
+                    <p class="content-paragraph" >I Python finns fyra primitiva datatyper. I följande faktaruka kan du se en sammanfattning av alla typer.</p>
+                     <!-- faktaruta code -->
+                     <div class="fakta-ruta-container">
+                        <div class="fakta-ruta-box">
+                            <span class="fakta-ruta-title">Datatyper</span> <br>
+                            <span class="fakta-ruta-text"><i class="fa-regular fa-star"></i> Datatyper är en beskrivning på vilken sorts data en variabel har. </span> <br>
+                            <span class="fakta-ruta-text"><i class="fa-regular fa-star"></i> I Python finns fyra grundläggande datatyper,  </span> <br>
+                            <span class="fakta-ruta-text">&nbsp;&nbsp;&nbsp;&nbsp;- <span class="imp--word">int</span>: är ett heltal, exempelvis 1, 2, 3, 4. </span> <br>
+                            <span class="fakta-ruta-text">&nbsp;&nbsp;&nbsp;&nbsp;- <span class="imp--word">float</span>: är ett flyttal, exempelvis 10.2, 23.5 eller 2.0.</span> <br>
+                            <span class="fakta-ruta-text">&nbsp;&nbsp;&nbsp;&nbsp;- <span class="imp--word">string (str)</span>:  är en textsträng, exempelvis “Programmera”, eller ‘123’. </span> <br>
+                            <span class="fakta-ruta-text">&nbsp;&nbsp;&nbsp;&nbsp;- <span class="imp--word">bool</span>: är antingen True (sant) eller False (falskt).</span> <br>
+                        </div>
+                    </div>
+                    <!-- fakta ruta code -->
+
+                    <p class="content-paragraph" >I tidigare modul skapade vi en variabel counter med värdet 5. </p>
+                     <!-- code block -->
+                     <div class="language-python">
+                        <!-- <span class="python-keyword">print</span>
+                        <span class="python-punctuation">(</span>
+                        <span class="python-string">'Hello World'</span>
+                        <span class="python-punctuation">)</span> -->
+                        <span class="python-punctuation">counter = 5</span>
+                       
+                     </div>
+                     <!-- code block -->
+                    <p class="content-paragraph" >5 är ett numeriskt värde och kallas för int eller integer i programmering. Så int är egentligen en datatyp som representerar alla siffror med utan decimalpunkter. Med hjälp av metoden type() får man reda på vilken typ en variabel har.  </p>
+                     <!-- code block -->
+                     <div class="language-python">
+                        <span class="python-punctuation">counter = 5</span> <br>
+                        <span class="python-keyword">print</span><span class="python-punctuation">(</span><span class="python-keyword">type</span><span class="python-punctuation">(</span><span>counter</span><span class="python-punctuation">)</span><span class="python-punctuation">)</span>
+                        
+                       
+                     </div>
+                     <!-- code block -->
+                    <p class="content-paragraph" >I utskriften ser man att variabeln counter har en typ int.</p>
+                      <!-- code result block START -->
+                      <div class="language-python-result">
+                        
+                        <div >
+                            <span >&lt;class 'int'&gt;</class></span>
+                        </div>
+                       
+                     </div>
+                     <!-- code result block END-->
+                    <p class="content-paragraph" >Om ett numerisk literal innehåller en decimalpunkt får den typen float. Datatypen float representerar alla flyttal i programmering.</p>
+                    <p class="content-paragraph" >Testa nu följande program,</p>
+                    <!-- code block -->
+                    <div class="language-python">
+                        <span class="python-punctuation">pris = 19.99</span> <br>
+                        <span class="python-keyword">print</span><span class="python-punctuation">(</span><span class="python-keyword">type</span><span class="python-punctuation">(</span><span>pris</span><span class="python-punctuation">)</span><span class="python-punctuation">)</span>  
+                    </div>
+                    <!-- code block -->
+                    <p class="content-paragraph" > I utskriften ser man att variabeln pris har en typ float.</p>
                    
+                     <!-- code result block START -->
+                     <div class="language-python-result">
+                        
+                        <div >
+                            <span >&lt;class 'float'&gt;</class></span>
+                        </div>
+                       
+                     </div>
+                     <!-- code result block END-->
+                    <p class="content-paragraph" >Förutom int (heltal) och float (flyttal) har vi två datatyper till i Python. Den ena kallas för str (förkortning av ordet string), och den andra kallas för bool (förkortning av order boolean). Datatypen str representerar text i Python. När man skapar en variabel av den typen använder man antingen citationstecken eller enkla apostrofer. Studera följande exempel,</p>
+                    <!-- code block -->
+                    <div class="language-python">
+                        <span class="python-punctuation">mening = 'Tomorrow is a sunny day!'</span> <br>
+                        <span class="python-keyword">print</span><span class="python-punctuation">(</span><span class="python-keyword">type</span><span class="python-punctuation">(</span><span>mening</span><span class="python-punctuation">)</span><span class="python-punctuation">)</span>  
+                    </div>
+                     <!-- code block -->
+                    <p class="content-paragraph" >Då skapas en variabel mening som får typen str. </p>
+                   
+                    <div class="language-python-result">
+                        <div >
+                            <span >&lt;class 'str'&gt;</class></span>
+                        </div>
+                    </div>
+                    <p class="content-paragraph" >I tidigare kodexempel skapade vi en str typ variable mening genom apostrofer. Men som sagt, man kan även använda citationstecken istället för apostrofer. Studera följande kodexempel,</p>
+                     <!-- code block -->
+                     <div class="language-python">
+                        <span class="python-punctuation">mening = "Tomorrow is a sunny day!"</span> <br>
+                    </div>
+                     <!-- code block -->
+                      <!-- faktaruta code -->
+                      <div class="fakta-ruta-container">
+                        <div class="fakta-ruta-box">
+                            <span class="fakta-ruta-title">Datatypen String (str)</span> <br>
+                            <span class="fakta-ruta-text"><i class="fa-regular fa-star"></i> Datatypen Str representerar text i Python. </span> <br>
+                            <span class="fakta-ruta-text"><i class="fa-regular fa-star"></i> Du ska alltid använda apostrofer eller citationstecken runt strängen för att tala om för datorn att det är en str typ data, alltså text-typ data.</span> <br>
+                        </div>
+                    </div>
+                    <!-- fakta ruta code -->
+                    <p class="content-paragraph" >Lägg märke till att om du t.ex. skriver:</p>
+                      <!-- code block -->
+                      <div class="language-python">
+                        <span class="python-punctuation">foo = '123' </span> <br>
+                    </div>
+                     <!-- code block -->
+                    <p class="content-paragraph" >Så är '123' inte en numerisk literal int. Det är en text som råkar innehålla siffror. Variabeln foo får alltså typen str.</p>
+                     <!-- code block -->
+                     <div class="language-python">
+                        <span class="python-punctuation">foo = '123'</span> <br>
+                        <span class="python-keyword">print</span><span class="python-punctuation">(</span><span class="python-keyword">type</span><span class="python-punctuation">(</span><span>foo</span><span class="python-punctuation">)</span><span class="python-punctuation">)</span>  
+                    </div>
+                     <!-- code block -->
+                    <p class="content-paragraph" >Utskriften blir str, som förväntat,</p>
+                       <!-- code result block START -->
+                       <div class="language-python-result">
+                        
+                        <div >
+                            <span >&lt;class 'str'&gt;</class></span>
+                        </div>
+                       
+                     </div>
+                     <!-- code result block END-->
+                    <p class="content-paragraph" >En string som innehåller siffror ('435') kallas för string representation av nummer (alltså, nummer i form av string). En sån här string går att konvertera till vanligt nummer genom att använda konverteringsfunktioner. Mer om konvertering kommer senare i kursen. Vi ska även diskutera typen str mer utförligt i modul strängar hantering.
+                    </p>
+                    <p class="content-paragraph" >Datatypen bool är en speciell datatyp och kan endast innehålla antingen True eller False. En variabel av typen bool skapar man som,</p>
+                     <!-- code block -->
+                     <div class="language-python">
+                        <span class="python-punctuation">svar = True</span> <br>
+                    </div>
+                     <!-- code block -->
+                    <p class="content-paragraph" >eller</p>
+                      <!-- code block -->
+                      <div class="language-python">
+                        <span class="python-punctuation">svar = False</span> <br>
+                    </div>
+                     <!-- code block -->
+                    <p class="content-paragraph" >Notera att botstaven T i True och F i False ska alltid vara storbokstav. Glöm inte att Python är skiftkänsligt.</p>
+                    <p class="content-paragraph" >Typen bool diskuteras mer ingående i modul if-satser </p>
+
+                    
+
                    
                  
 
@@ -104,7 +243,7 @@
                     <div class="exercise">
                             <details>
                                 
-                                    <summary><span class="question">1. Skapa en variabel <span class="imp--word--exer">x</span> och tilldela värdet <span class="imp--word--exer">50</span> till den. Skriva ut värdet med hjälp av <span class="imp--word--blue">print() f</span>unktion.</span> <span class="answer">Svar</span> </summary>                          
+                                    <summary><span class="question">1, Skapa variablerna a, b, c och d. Ge a värdet 12, b värdet 12.0, c värdet '12.0' och d värdet True. Undersök sedan vilka värden och typer de fyra variablerna har.</span> <span class="answer">Svar</span> </summary>                          
                                 <p >
                                     <!-- code block -->
                                     <div class="language-python" id="language-python">
@@ -117,7 +256,10 @@
 
                             <details>
                                 
-                                <summary><span class="question">2. Skapa en variabel <span class="imp--word--exer">nummer</span> och tilldela ett värde mellan <span class="imp--word--exer">1-100</span> till den. Räkna upphöjt till värdet och spara resultat i en annan variabel,<span class="imp--word--exer"> upphojt</span>. Skriva ut <span class="imp--word--exer">upphojt</span> i konsolen.(tips: väret multipliceras med värde ger upphöjt.)</span> <span class="answer">Svar</span> </summary>                          
+                                <summary><span class="question">Undersöka typen på följande variabler,
+                                   <br> ans = True
+                                    <br> st = 'True'
+                                    </span> <span class="answer">Svar</span> </summary>                          
                             <p id="language-python">
                                 <!-- code block -->
                                 <div class="language-python" id="language-python">
@@ -130,7 +272,10 @@
                         </details>
                         <details>
                                 
-                            <summary><span class="question">3. Skapa en variabel <span class="imp--word--exer">a</span> och ge den värdet <span class="imp--word--exer">10</span>. Skapa sedan en variabel <span class="imp--word--exer">b</span> och tilldela värdet av variabeln <span class="imp--word--exer">a</span> till variabeln <span class="imp--word--exer">b</span>. Sakapa nu en tredje variabel <span class="imp--word--exer">c </span>och ge den ett värde vilket blir en summa av variabel <span class="imp--word--exer">a</span> och <span class="imp--word--exer">b</span>. Printa ut sedan värdet i variabeln <span class="imp--word--exer">c</span>.</span> <span class="answer">Svar</span> </summary>                          
+                            <summary><span class="question">Testa följande uttryck i ett program och studera utskriften.
+                               <br> sum = 12 + '12'
+                               <br> print(sum)
+                                </span> <span class="answer">Svar</span> </summary>                          
                         <p id="language-python">
                             <!-- code block -->
                             <div class="language-python" id="language-python">
@@ -146,8 +291,7 @@
                     
                     <!-- Last paragraph -->
                     <p class="content-paragraph" style="text-align: center; font-style: italic;">
-                        Perkekt! Vi är klar med denna modulen <span class="imp--word">variabel</span>. Du kommmer fortsätta arbeta med variabler kontinurligt i kursen eftersom varje program behandlar någon typ av data och för att hålla/spara data i programmet behöver man  
-                    </p>
+                        Perkekt! ????????????????????????????? </p>
                      <!-- Last paragraph -->
                      <p class="content-paragraph"> </p>
                     
@@ -185,11 +329,11 @@
                         btnNext.innerHTML =`<i class="fa-solid fa-circle-chevron-right fa-fade"></i> <span>${next.charAt(0).toUpperCase()}${next.slice(1)} </span> `;
                             
                             btnPrev.addEventListener('click', () =>{
-                                location.href = 'helloworld.html?prev=köra python&next=variabler';
+                                location.href = 'variable.html?prev=hello world&next=data typer';
                             })
                             
                             btnNext.addEventListener('click', () =>{
-                                location.href = 'datatypes.html?prev=variabler&next=dontknow';
+                                location.href = 'inputoutput.html?prev=datatyper&next=dontknow';
                             })
 
                         </script>

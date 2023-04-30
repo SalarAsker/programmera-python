@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="../styles/header-footer.css">
+      <link rel="stylesheet" href="../styles/content.css">
+      <script src="../scr/logout_src.js" defer></script>
+    <title>Introduction</title>
+</head>
+<body>
+
+    <div class="wrapper">
+
+         <!-- site header starts here -->
+         <header class="site-main-header">
+           
+            <div class="flex-header-child1">
+                <h1 class="site-main-title">Lär dig <br> programmera  </h1>
+                <div>
+                    <span class="change">Python</span>
+                
+                </div>
+                <span class="small">Grund programmering kurs <br><button style="margin-top:5px;padding:5px" id="logout__btn">Log out</button></span>               
+            </div>
+            <!-- <div  class="flex-header-child2">
+                <button>Om kursen</button>
+                <button>Om läraren</button>
+            </div> -->
+    </header> <!-- site header ends here -->
+
+        <main class="site-main">
+        
+            <div class="site-main-container">
+                <div class="site-sidebar-container">
+                    <nav>
+                        <ul class="navigations-ul">
+                            <li><a href="startsida.html">Start sida</a> </li>
+                                <li><a href="forord.html?prev=start&next=introduktion">Förord</a> </li>
+                                <li><a href="introduction.html?prev=förord&next=Köra Python">Introduktion</a></li>
+                                <li><a href="runpython.html?prev=introduction&next=hello world">Köra Python</a></li>
+                                <li><a href="helloworld.html?prev=Köra python&next=variabler">Hello World program</a></li>
+                                <li><a href="variable.html?prev=hello world&next=datatyper">Variabler</a></li>
+                                <li><a href="datatypes.html?prev=variabler&next=input output">Datatyper</a></li>
+                                <li><a href="inputoutput.html?prev=data types&next=math modul">Input Output</a></li>
+
+                           
+                            <li><a href="">If satser</a></li>
+                            <li><a href="">Iterationssatser</a></li>
+                            <li><a href="">Sträng hantering</a></li>
+                            <li><a href="">Funktioner</a></li>
+                            <li> <a href="">Samling lista</a></li>
+                        </ul>
+                   </nav>
+                </div> <!-- sidebar contianer ends here -->
+                   
+
+               
+                <div class="site-prog-content-container">
+                   <div class="flex-child1">
+                    <button class="menu__toggle r-button" type="button">
+                        <span class="menu__toggle-hint screen-reader">Open menu</span>
+                        <span class="m-hamburger-1">
+                          <span class="m-hamburger-1">
+                            
+                          </span>
+                        </span>
+                      </button>
+                   </div>
+                   <div class="drop-down-menu flex-child2">
+                        <nav>
+                            <ul class="navigations">
+                                <li><a href="startsida.html">Start sida</a> </li>
+                                <li><a href="forord.html?prev=start&next=introduktion">Förord</a> </li>
+                                <li><a href="introduction.html?prev=förord&next=Köra Python">Introduktion</a></li>
+                                <li><a href="runpython.html?prev=introduction&next=hello world">Köra Python</a></li>
+                                <li><a href="helloworld.html?prev=Köra python&next=variabler">Hello World program</a></li>
+                                <li><a href="variable.html?prev=hello world&next=datatyper">Variabler</a></li>
+                                <li><a href="datatypes.html?prev=variabler&next=input output">Datatyper</a></li>
+                                <li><a href="inputoutput.html?prev=data types&next=math modul">Input Output</a></li>
+
+                                
+                                <li><a href="">If satser</a></li>
+                                <li><a href="">Iterationssatser</a></li>
+                                <li><a href="">Sträng hantering</a></li>
+                                <li><a href="">Funktioner</a></li>
+                                <li> <a href="">Samling lista</a></li>
+                            </ul>
+                    </nav>
+                   </div>
+
+                   <div class="flex-child3">
+
+                      <h1 class="content-title-level1">Läsa in och skriva ut <br>input() och print() funktioner</h1>
+                      <p class="special-tag">------Att arbeta med data.</p>
+                      <p class="content-paragraph" style="font-style: italic;">Från och med denna modul börjar du arbeta med datan. Du lär dig skapa och använda variabler i Python. En variabel är en reserverad plats i datorns arbetsminne som innehåller ett värde av en specifik typ.</p>
+
+                      <p class="content-paragraph">Du har sett flera exempel på hur man kan tilldela numeriska värden till variabler. Värden som vi tilldelat i tidigare avsnitt var förbestämda eftersom de redan var där när programmet exekverats. Men för att kunna skriva realistiska program måste man involvera användarna så att de kan skriva in tal när programmet körs. </p>
+
+                      <p class="content-paragraph">För att läsa in input eller tal eller data i programmet används metoden input( ) i Python. Vi börjar studera input( ) metoden genom att skriva ett program och sedan diskuterar vi programmet. Öppna en ny Python-fil och kalla den hej.py. Kod följande i editorn. 
+                    </p>
+                    
+                     <!-- code block -->
+                     <div class="language-python">
+                        
+                        <span>namn = </span><span class="python-keyword">input</span><span class="python-punctuation">(</span><span class="python-string">'vad heter du?'</span><span class="python-punctuation">)</span> <br>
+                        <span class="python-keyword">print</span><span class="python-punctuation">(</span><span>namn</span><span class="python-punctuation">)</span>  
+                    </div>
+                     <!-- code block -->
+                     <p class="content-paragraph">När du kör programmet ser du ett meddelande ‘vad heter du?’, framför detta ser du en blinkande prompt, vilket betyder att programmet förväntar sig en input från användaren. Om du skriver ditt namn och trycker Enter ser du en utskrift ‘Hej xxxxx’.</p>
+                     <p class="content-paragraph">På den första raden anropas inläsningsmetoden input( ). Innanför parenteserna ska man skriva den fråga som man vill att programmet ska skriva ut. Programmet väntar sedan tills den som kör programmet har skrivit ett svar. Metoden avslutas så fort man trycker Enter tangenten efter att ha skrivit svaret. Som resultat returnerar metoden svaret (den text som användaren skrivit). Svaret läggs här i en variabel som ges namnet namn.</p>
+                     <p class="content-paragraph">Metoden input( ) returnerar alltid data av typen str (string eller text). Mer om detta kommer senare i denna modul.</p>
+
+                    
+                     
+                      <!-- faktaruta code -->
+                       <div class="fakta-ruta-container">
+                        <div class="fakta-ruta-box">
+                            <span class="fakta-ruta-title">input() funktion</span> <br>
+                            <span class="fakta-ruta-text"><i class="fa-regular fa-star fa-fade"></i> Metoden input() är en standardfunktion i Python.</span> <br>
+                            <span class="fakta-ruta-text"><i class="fa-regular fa-star fa-fade"></i>Med metoden input() kan man läsa  in data till ett program.
+                            </span> <br>
+                            <span class="fakta-ruta-text"><i class="fa-regular fa-star fa-fade"></i>Metoden input() uppmanar användaren att ange ett värde och inväntar till dess att användaren har skickat in värdet.</span> <br>
+                            <span class="fakta-ruta-text"><i class="fa-regular fa-star fa-fade"></i>Returnerar alltid en textsträng.</span> 
+                        </div>
+                    </div>
+                    <!-- fakta ruta code -->
+                    <p class="content-paragraph">På den andra raden anropas utskriftsmetoden print( ). Innanför parenteserna anger man vad man vill ska skrivas ut. Det ska vara en text eller flera texter. Om det är flera texter räknar man upp dem med kommatecken mellan. I detta exempel är ‘Hej’ den första texten som ska skrivas ut. Den andra texten ska skrivas ut är den text som finns i variabeln namn. Observera att det inte ska vara citationstecken runt ordet namn. Detta ord är ju variabelnamnet, inte själva texten.</p>
+                      <!-- faktaruta code -->
+                      <div class="fakta-ruta-container">
+                        <div class="fakta-ruta-box">
+                            <span class="fakta-ruta-title">print() funktion</span> <br>
+                            <span class="fakta-ruta-text"><i class="fa-regular fa-star fa-fade"></i> Metoden print() är en standardfunktion i Python.</span> <br>
+                            <span class="fakta-ruta-text"><i class="fa-regular fa-star fa-fade"></i>Med metoden print() kan man skriva ut data.</span> <br>
+                            <span class="fakta-ruta-text"><i class="fa-regular fa-star fa-fade"></i>Metoden print() kan ta flera argument som print(text1, text2, text3). Argumenten måste vara åtskilda via ett kommatecken. Det läggs automatiskt ett blankt tecken på mallan.</span> 
+                        </div>
+                    </div>
+                    <!-- fakta ruta code -->
+                    <p class="content-paragraph">Innan vi går vidare jobbar vi lite mer med dessa metoder.</p>
+                    <p class="content-paragraph"></p>
+                    <p class="content-paragraph"></p>
+                    <p class="content-paragraph"></p>
+                    <p class="content-paragraph"></p>
+                    <p class="content-paragraph"></p>
+
+                     
+                      
+                     
+                     
+
+                    <h2 class="content-title-level2">Övningar</h2>
+                    <p class="content-paragraph"> Innan du går vidare måste du bli duktig på att skapa och använda variabler. Lös följande övningar och då är du redo för en nästa utmaning. </p>
+                    <!-- Exercise div START -->
+                    <div class="exercise">
+                            <details>
+                                
+                                    <summary><span class="question">Koda en print() metod och ge den flera argument att skriva ut. <br> T.ex. <br> print( 'Vi har börjat med att', 'programmera i', 'Python')
+                                        </span> <span class="answer">Svar</span> </summary>                          
+                                <p >
+                                    <!-- code block -->
+                                    <div class="language-python" id="language-python">
+                                        <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">x = 50</span> <br>
+                                        <span class="python-keyword" style="margin-bottom: 5px;display: inline-block;">print</span><span class="python-punctuation">(</span><span >x</span><span class="python-punctuation">)</span><br>
+                                    </div>
+                                    <!-- code block -->
+                                </p>
+                            </details>
+
+                            <details>
+                                
+                                <summary><span class="question">Skriv en ny version av programmet ovan. Skapa två variabler, msg1 och msg2. Ge msg1 texten 'Vi har börjat med att', msg2 texten 'programmera i'. Låt texten ‘Python’ sitta kvar. Koda nu en print() som skriver ut samma utskrift som i fråga 1</span> <span class="answer">Svar</span> </summary>                          
+                            <p id="language-python">
+                                <!-- code block -->
+                                <div class="language-python" id="language-python">
+                                    <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">nummer = 10</span> <br>
+                                    <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">upphojt = nummer * nummer</span> <br>
+                                    <span class="python-keyword" style="margin-bottom: 5px;display: inline-block;">print</span><span class="python-punctuation">(</span><span >upphojt</span><span class="python-punctuation">)</span><br>
+                                </div>
+                                <!-- code block -->    
+                            </p>
+                        </details>
+                        <details>
+                                
+                            <summary><span class="question">Kör flera input() och läs in personuppgifter förnamn, efternamn, telefon och email. Programmet ska skriva ut en utskrift som följande, 
+                                Vi har tagit emot uppgifter: 
+                                Name: Salar Asker 
+                                Telefon: 0738000000 
+                                Email: salar@abc.com
+                                (för att införa en radbrytning lägg \n i strängen)
+                                </span> <span class="answer">Svar</span> </summary>                          
+                        <p id="language-python">
+                            <!-- code block -->
+                            <div class="language-python" id="language-python">
+                                <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">a = 10</span> <br>
+                                <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">b = a</span> <br>
+                                <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">c = a + b</span> <br>
+                                <span class="python-keyword" style="margin-bottom: 5px;display: inline-block;">print</span><span class="python-punctuation">(</span><span >c</span><span class="python-punctuation">)</span><br>
+                            </div>
+                            <!-- code block -->    
+                        </p>
+                        </details>
+                        <details>
+                                
+                            <summary><span class="question">Skapa två variabler som följande, 
+                                a = 10
+                                b = 20
+                                Koda en print som genererar följande utskrift
+                                Summan är: 30
+                                
+                                </span> <span class="answer">Svar</span> </summary>                          
+                        <p id="language-python">
+                            <!-- code block -->
+                            <div class="language-python" id="language-python">
+                                <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">a = 10</span> <br>
+                                <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">b = a</span> <br>
+                                <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">c = a + b</span> <br>
+                                <span class="python-keyword" style="margin-bottom: 5px;display: inline-block;">print</span><span class="python-punctuation">(</span><span >c</span><span class="python-punctuation">)</span><br>
+                            </div>
+                            <!-- code block -->    
+                        </p>
+                        </details>
+
+                        <details>
+                                
+                            <summary><span class="question">Nu skriver vi en ny version av program 4. Istället för att skapa variabler a och b med talen 10 och 20 ska vi läsa in data i båda variabler via input() metoden. Vi ska sedan addera båda variabler och försöka  skriva ut summan. Så här ser programkoden ut: (anta att vi ger 10 och 20 till programmet.)
+
+                                a = input('Ange nummer1:')
+                                b = input('Ange nummer2:')
+                                summan = a + b
+                                print('Summan är:', summan)
+                                  
+                                (här kommer bli resultatet annorlunda. Istället för 30 ser man 1020 i utskriften. Varför blir detta resultat förklaras i nästa avsnitt)
+                                
+                                </span> <span class="answer">Svar</span> </summary>                          
+                        <p id="language-python">
+                            <!-- code block -->
+                            <div class="language-python" id="language-python">
+                                <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">a = 10</span> <br>
+                                <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">b = a</span> <br>
+                                <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">c = a + b</span> <br>
+                                <span class="python-keyword" style="margin-bottom: 5px;display: inline-block;">print</span><span class="python-punctuation">(</span><span >c</span><span class="python-punctuation">)</span><br>
+                            </div>
+                            <!-- code block -->    
+                        </p>
+                        </details>
+                    </div> <!-- Exercise div END -->
+                    
+                    <!-- Last paragraph -->
+                    <p class="content-paragraph" style="text-align: center; font-style: italic;">
+                        Perkekt! Vi är klar med denna modulen <span class="imp--word">variabel</span>. Du kommmer fortsätta arbeta med variabler kontinurligt i kursen eftersom varje program behandlar någon typ av data och för att hålla/spara data i programmet behöver man  
+                    </p>
+                     <!-- Last paragraph -->
+                     <p class="content-paragraph"> </p>
+                    
+
+                     
+
+           
+                
+             
+                     
+                
+                
+                    </div> <!-- flex child3 div ends here -->
+                <div class="pre-next">
+                    <button id="btnPrev">Previous:</button>
+                    <button id="btnNext">Next:</button>
+                </div>
+               
+                    <script>
+                            const btnPrev = document.getElementById('btnPrev');
+                            const btnNext = document.getElementById('btnNext');
+
+                            const queryString = window.location.search;
+                            console.log(queryString);
+                            const urlParams = new URLSearchParams(queryString);
+                            console.log(urlParams);
+                            
+                            const prev = urlParams.get('prev')
+                            const next = urlParams.get('next');
+                            console.log(prev);
+                            console.log(next);  
+                            prev.toUpperCase();
+                            
+                            btnPrev.innerHTML =`<i class="fa-solid fa-circle-chevron-left fa-fade"></i> <span> ${prev.charAt(0).toUpperCase()}${prev.slice(1)}</span>  `;
+                        btnNext.innerHTML =`<i class="fa-solid fa-circle-chevron-right fa-fade"></i> <span>${next.charAt(0).toUpperCase()}${next.slice(1)} </span> `;
+                            
+                            btnPrev.addEventListener('click', () =>{
+                                location.href = 'helloworld.html?prev=köra python&next=variabler';
+                            })
+                            
+                            btnNext.addEventListener('click', () =>{
+                                location.href = 'datatypes.html?prev=variabler&next=dontknow';
+                            })
+
+                        </script>
+            </div>               <!-- site content div ends here, contains side menu and content -->
+        </div>
+        
+        
+        
+        </main>
+
+
+
+
+          <!-- site footer starts here -->
+          <footer class="site-main-footer">
+            <p class="footer-description">Kursen skapats av</p>
+            <p class="author-name">Salar Asker Zada</p>
+            <p>Leg. programmerings lärare</p>
+            <!-- <p class="author-contact"> 
+                <a href="mailto:salarmeer@gmail.com"> 
+                    <i class="fa-solid fa-at"></i> <span>Kontakta om du vill ha privat undervisning</span></a> 
+                </p> -->
+        </footer>
+        <!-- site footer ends here -->
+    </div>
+
+    <script>
+        document.querySelector('.r-button')
+        .addEventListener('click', () =>{
+        document.querySelector('.drop-down-menu').classList.toggle('visible');
+        })
+    
+    </script>
+
+    </div>
+
+
+</body>
+</html>
