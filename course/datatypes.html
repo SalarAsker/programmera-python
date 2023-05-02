@@ -96,9 +96,9 @@
 
                     <h1 class="content-title-level1">Datatyper</h1>
                     <p class="special-tag">------Att förstå olike typer av data i Python.</p>
-                    <p class="content-paragraph" style="font-style: italic;">När man vet att hur variabeln skapas som håller datan är det dags att lära sig olika typer av data. I denna modul diskuterar vi Pythons primitiva datatyper.</p>
+                    <p class="content-paragraph" style="font-style: italic;">Vi vet att vad en variabel är och hur den skapas i ett program. En variabel lagrar data som programmet behandlar. Nästa steg i kursen är att kunna förstå olika typer av data som en variabel kan lagra. I denna modul diskuterar vi Pythons primitiva datatyper.</p>
                      
-                    <p class="content-paragraph" >En datatyp är, som det låter, en beskrivning av vilken sorts data en variabel innehåller, vilket kan vara exempelvis en siffra (heltal, flyttal), textsträng (vanlig text) eller en boolean (true/false eller etta/nolla).</p>
+                    <p class="content-paragraph" >En datatyp är, som det låter, en beskrivning av vilken sorts data en variabel innehåller, vilket kan vara exempelvis en <span class="imp--word">siffra</span> (heltal, flyttal), <span class="imp--word">textsträng</span> (vanlig text) eller en <span class="imp--word">boolean</span> (true/false eller etta/nolla).</p>
                     <p class="content-paragraph" >I Python finns fyra primitiva datatyper. I följande faktaruka kan du se en sammanfattning av alla typer.</p>
                      <!-- faktaruta code -->
                      <div class="fakta-ruta-container">
@@ -114,7 +114,7 @@
                     </div>
                     <!-- fakta ruta code -->
 
-                    <p class="content-paragraph" >I tidigare modul skapade vi en variabel counter med värdet 5. </p>
+                    <p class="content-paragraph" >I tidigare modul skapade vi en variabel <span class="imp--word">counter</span> med värdet <span class="imp--word">5</span>. </p>
                      <!-- code block -->
                      <div class="language-python">
                         <!-- <span class="python-keyword">print</span>
@@ -125,7 +125,7 @@
                        
                      </div>
                      <!-- code block -->
-                    <p class="content-paragraph" >5 är ett numeriskt värde och kallas för int eller integer i programmering. Så int är egentligen en datatyp som representerar alla siffror med utan decimalpunkter. Med hjälp av metoden type() får man reda på vilken typ en variabel har.  </p>
+                    <p class="content-paragraph" ><span class="imp--word">5</span> är ett numeriskt värde och kallas för <span class="imp--word">int</span> eller <span class="imp--word">integer</span> i programmering. Så <span class="imp--word">int</span> är egentligen en datatyp som representerar alla siffror med utan decimalpunkter. Med hjälp av metoden <span class="imp--word--blue">type()</span> får man reda på vilken typ en variabel har.  </p>
                      <!-- code block -->
                      <div class="language-python">
                         <span class="python-punctuation">counter = 5</span> <br>
@@ -134,7 +134,8 @@
                        
                      </div>
                      <!-- code block -->
-                    <p class="content-paragraph" >I utskriften ser man att variabeln counter har en typ int.</p>
+
+                    <p class="content-paragraph" >I utskriften ser man att variabeln <span class="imp--word">counter</span> har en typ <span class="imp--word">int</span>.</p>
                       <!-- code result block START -->
                       <div class="language-python-result">
                         
@@ -144,7 +145,7 @@
                        
                      </div>
                      <!-- code result block END-->
-                    <p class="content-paragraph" >Om ett numerisk literal innehåller en decimalpunkt får den typen float. Datatypen float representerar alla flyttal i programmering.</p>
+                    <p class="content-paragraph" >Om ett numerisk literal innehåller en decimalpunkt får den typen <span class="imp--word">float</span>. Datatypen <span class="imp--word">float</span> representerar alla flyttal i programmering.</p>
                     <p class="content-paragraph" >Testa nu följande program,</p>
                     <!-- code block -->
                     <div class="language-python">
@@ -152,7 +153,7 @@
                         <span class="python-keyword">print</span><span class="python-punctuation">(</span><span class="python-keyword">type</span><span class="python-punctuation">(</span><span>pris</span><span class="python-punctuation">)</span><span class="python-punctuation">)</span>  
                     </div>
                     <!-- code block -->
-                    <p class="content-paragraph" > I utskriften ser man att variabeln pris har en typ float.</p>
+                    <p class="content-paragraph" > I utskriften ser man att variabeln <span class="imp--word">pris</span> har en typ <span class="imp--word">float</span>.</p>
                    
                      <!-- code result block START -->
                      <div class="language-python-result">
@@ -163,21 +164,21 @@
                        
                      </div>
                      <!-- code result block END-->
-                    <p class="content-paragraph" >Förutom int (heltal) och float (flyttal) har vi två datatyper till i Python. Den ena kallas för str (förkortning av ordet string), och den andra kallas för bool (förkortning av order boolean). Datatypen str representerar text i Python. När man skapar en variabel av den typen använder man antingen citationstecken eller enkla apostrofer. Studera följande exempel,</p>
+                    <p class="content-paragraph" >Förutom <span class="imp--word">int (heltal)</span> och <span class="imp--word">float (flyttal)</span> har vi två datatyper till i Python. Den ena kallas för <span class="imp--word">str</span> (förkortning av ordet string), och den andra kallas för <span class="imp--word">bool</span> (förkortning av order boolean). Datatypen <span class="imp--word">str</span> representerar text i Python. När man skapar en variabel av den typen använder man antingen <span class="imp--word">citationstecken(" ")</span> eller enkla <span class="imp--word">apostrofer (' ')</span>. Studera följande exempel,</p>
                     <!-- code block -->
                     <div class="language-python">
                         <span class="python-punctuation">mening = <span class="python-string">'Tomorrow is a sunny day!'</span></span> <br>
                         <span class="python-keyword">print</span><span class="python-punctuation">(</span><span class="python-keyword">type</span><span class="python-punctuation">(</span><span>mening</span><span class="python-punctuation">)</span><span class="python-punctuation">)</span>  
                     </div>
                      <!-- code block -->
-                    <p class="content-paragraph" >Då skapas en variabel mening som får typen str. </p>
+                    <p class="content-paragraph" >Då skapas en variabel <span class="imp--word">mening</span> som får typen <span class="imp--word">str</span>. </p>
                    
                     <div class="language-python-result">
                         <div >
                             <span >&lt;class 'str'&gt;</class></span>
                         </div>
                     </div>
-                    <p class="content-paragraph" >I tidigare kodexempel skapade vi en str typ variable mening genom apostrofer. Men som sagt, man kan även använda citationstecken istället för apostrofer. Studera följande kodexempel,</p>
+                    <p class="content-paragraph" >I tidigare kodexempel skapade vi en <span class="imp--word">str</span> typ variable <span class="imp--word">mening</span> genom <span class="imp--word">apostrofer</span>. Men som sagt kan man även använda <span class="imp--word">citationstecken</span> istället för <span class="imp--word">apostrofer</span>. Studera följande kodexempel,</p>
                      <!-- code block -->
                      <div class="language-python">
                         <span class="python-punctuation">mening = <span class="python-string">"Tomorrow is a sunny day!"</span></span> <br>
@@ -198,14 +199,14 @@
                         <span class="python-punctuation">foo = <span class="python-string">'123'</span> </span> <br>
                     </div>
                      <!-- code block -->
-                    <p class="content-paragraph" >Så är '123' inte en numerisk literal int. Det är en text som råkar innehålla siffror. Variabeln foo får alltså typen str.</p>
+                    <p class="content-paragraph" >Så är <span class="imp--word">'123'</span> inte en numerisk literal <span class="imp--word">int</span>. Det är en text som råkar innehålla siffror. Variabeln <span class="imp--word">foo</span> får alltså typen <span class="imp--word">str</span>.</p>
                      <!-- code block -->
                      <div class="language-python">
                         <span class="python-punctuation">foo = <span class="python-string">'123'</span></span> <br>
                         <span class="python-keyword">print</span><span class="python-punctuation">(</span><span class="python-keyword">type</span><span class="python-punctuation">(</span><span>foo</span><span class="python-punctuation">)</span><span class="python-punctuation">)</span>  
                     </div>
                      <!-- code block -->
-                    <p class="content-paragraph" >Utskriften blir str, som förväntat,</p>
+                    <p class="content-paragraph" >Utskriften blir <span class="imp--word">str</span> som förväntat,</p>
                        <!-- code result block START -->
                        <div class="language-python-result">
                         
@@ -215,9 +216,9 @@
                        
                      </div>
                      <!-- code result block END-->
-                    <p class="content-paragraph" >En string som innehåller siffror ('435') kallas för string representation av nummer (alltså, nummer i form av string). En sån här string går att konvertera till vanligt nummer genom att använda konverteringsfunktioner. Mer om konvertering kommer senare i kursen. Vi ska även diskutera typen str mer utförligt i modul strängar hantering.
+                    <p class="content-paragraph" >En string som innehåller siffror ('435') kallas för <span class="imp--word">string representation av nummer (alltså, nummer i form av string)</span>. En sån här string går att konvertera till vanligt nummer genom att använda konverteringsfunktioner. Mer om konvertering kommer senare i kursen. Vi ska även diskutera typen <span class="imp--word">str</span> mer utförligt i modul sträng hantering.
                     </p>
-                    <p class="content-paragraph" >Datatypen bool är en speciell datatyp och kan endast innehålla antingen True eller False. En variabel av typen bool skapar man som,</p>
+                    <p class="content-paragraph" >Datatypen <span class="imp--word">bool</span> är en speciell datatyp och kan endast innehålla antingen <span class="imp--word">True</span> eller <span class="imp--word">False</span>. En variabel av typen bool skapar man som,</p>
                      <!-- code block -->
                      <div class="language-python">
                         <span class="python-punctuation">svar = True</span> <br>
@@ -229,8 +230,8 @@
                         <span class="python-punctuation">svar = False</span> <br>
                     </div>
                      <!-- code block -->
-                    <p class="content-paragraph" >Notera att botstaven T i True och F i False ska alltid vara storbokstav. Glöm inte att Python är skiftkänsligt.</p>
-                    <p class="content-paragraph" >Typen bool diskuteras mer ingående i modul if-satser </p>
+                    <p class="content-paragraph" >Notera att botstaven <span class="imp--word">T</span> i <span class="imp--word">True</span> och <span class="imp--word">F</span> i <span class="imp--word">False</span> ska alltid vara storbokstav. Glöm inte att Python är <span class="imp--word">skiftkänsligt</span>.</p>
+                    <p class="content-paragraph" >Typen <span class="imp--word">bool</span> diskuteras mer ingående i modul if-satser </p>
 
                     
 
@@ -238,17 +239,29 @@
                  
 
                     <h2 class="content-title-level2">Övningar</h2>
-                    <p class="content-paragraph"> ????????????????????????????? </p>
+                    <p class="content-paragraph">Det är nu dags att avrunda denna modul genom att lösa övningar och träna på datatyper. Lös följande program så att du blir duktig på att behandla olika typer av data i programmet.</p>
                     <!-- Exercise div START -->
                     <div class="exercise">
                             <details>
                                 
-                                    <summary><span class="question">1, Skapa variablerna a, b, c och d. Ge a värdet 12, b värdet 12.0, c värdet '12.0' och d värdet True. Undersök sedan vilka värden och typer de fyra variablerna har.</span> <span class="answer">Svar</span> </summary>                          
+                                    <summary><span class="question">1, Skapa variablerna <span class="imp--word--exer">a</span>, <span class="imp--word--exer">b</span>, <span class="imp--word--exer">c</span> och <span class="imp--word--exer">d</span>. Ge <span class="imp--word--exer">a</span> värdet <span class="imp--word--exer">12</span>, <span class="imp--word--exer">b</span> värdet <span class="imp--word--exer">12.0</span>, <span class="imp--word--exer">c</span> värdet <span class="imp--word--exer">'12.0'</span> och <span class="imp--word--exer">d</span> värdet <span class="imp--word--exer">True</span>. Undersök sedan vilka värden och typer de fyra variablerna har.</span> <span class="answer">Svar</span> </summary>                          
                                 <p >
                                     <!-- code block -->
                                     <div class="language-python" id="language-python">
-                                        <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">x = 50</span> <br>
-                                        <span class="python-keyword" style="margin-bottom: 5px;display: inline-block;">print</span><span class="python-punctuation">(</span><span >x</span><span class="python-punctuation">)</span><br>
+                                        <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">a = 12</span> <br>
+                                        <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">b = 12.0</span> <br>
+                                        <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">c = <span class="python-string">'12.0'</span></span> <br>
+                                        <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">d = True</span> <br>
+                                        
+                                        <span class="python-keyword">print</span><span class="python-punctuation">(</span><span class="python-keyword">type</span><span class="python-punctuation">(</span><span>a</span><span class="python-punctuation">)</span><span class="python-punctuation">)</span> <br>
+
+                                        <span class="python-keyword">print</span><span class="python-punctuation">(</span><span class="python-keyword">type</span><span class="python-punctuation">(</span><span>b</span><span class="python-punctuation">)</span><span class="python-punctuation">)</span> <br>
+
+                                        <span class="python-keyword">print</span><span class="python-punctuation">(</span><span class="python-keyword">type</span><span class="python-punctuation">(</span><span>c</span><span class="python-punctuation">)</span><span class="python-punctuation">)</span> <br>
+
+                                        <span class="python-keyword">print</span><span class="python-punctuation">(</span><span class="python-keyword">type</span><span class="python-punctuation">(</span><span>d</span><span class="python-punctuation">)</span><span class="python-punctuation">)</span>
+                                        
+                                        
                                     </div>
                                     <!-- code block -->
                                 </p>
@@ -256,33 +269,30 @@
 
                             <details>
                                 
-                                <summary><span class="question">Undersöka typen på följande variabler,
-                                   <br> ans = True
-                                    <br> st = 'True'
+                                <summary><span class="question">2. Undersök typen på följande variabler,
+                                   <br>ans = True
+                                   <br>st = <span class="python-string">'True'</span>
                                     </span> <span class="answer">Svar</span> </summary>                          
                             <p id="language-python">
                                 <!-- code block -->
                                 <div class="language-python" id="language-python">
-                                    <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">nummer = 10</span> <br>
-                                    <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">upphojt = nummer * nummer</span> <br>
-                                    <span class="python-keyword" style="margin-bottom: 5px;display: inline-block;">print</span><span class="python-punctuation">(</span><span >upphojt</span><span class="python-punctuation">)</span><br>
+                                    <span class="python-keyword">print</span><span class="python-punctuation">(</span><span class="python-keyword">type</span><span class="python-punctuation">(</span><span>ans</span><span class="python-punctuation">)</span><span class="python-punctuation">)</span> <br>
+
+                                    <span class="python-keyword">print</span><span class="python-punctuation">(</span><span class="python-keyword">type</span><span class="python-punctuation">(</span><span>st</span><span class="python-punctuation">)</span><span class="python-punctuation">)</span>
                                 </div>
                                 <!-- code block -->    
                             </p>
                         </details>
                         <details>
                                 
-                            <summary><span class="question">Testa följande uttryck i ett program och studera utskriften.
-                               <br> sum = 12 + '12'
-                               <br> print(sum)
+                            <summary><span class="question">3. Testa följande uttryck i ett program och studera utskriften.
+                               <br> summa = 12 + <span class="python-string">'12'</span>
+                               <br> <span class="imp--word--blue">print</span>(summa)
                                 </span> <span class="answer">Svar</span> </summary>                          
                         <p id="language-python">
                             <!-- code block -->
                             <div class="language-python" id="language-python">
-                                <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">a = 10</span> <br>
-                                <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">b = a</span> <br>
-                                <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">c = a + b</span> <br>
-                                <span class="python-keyword" style="margin-bottom: 5px;display: inline-block;">print</span><span class="python-punctuation">(</span><span >c</span><span class="python-punctuation">)</span><br>
+                                <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">Om du tycker att summan bli 24 så har du fel. Resultatet blir 1212 och variabeln summa får typen str. Varför bli det så här? Det är för att vi adderar en str typ ('12') med en int typ (12) vilket inte går att göra i programmering. Python ska förvandla int typ 12 till str typ '12' i bakgrunden och sedan lägga ihop båda strängar. När man använder plus-tecknet på nummer utförs vanlig addition men på strängar utförs sammanfogning.När programmet själv gör en konvertering kallas det för implicit konvrtering och när programmeraren gör en konvertering kallas det för explicit konvertering. Mer om konvertering från en typ till en annan diskuteras senare i kursen.</span> <br>
                             </div>
                             <!-- code block -->    
                         </p>
@@ -291,7 +301,7 @@
                     
                     <!-- Last paragraph -->
                     <p class="content-paragraph" style="text-align: center; font-style: italic;">
-                        Perkekt! ????????????????????????????? </p>
+                        Perkekt! Du vet nu väl att vilka olika datatyper finns i Python och hur man skapar variablar som kan lagra de olika typer. Det är nu dags att börja skriva mer realistiska program som har läser in data i programmet. Klick näst och arbeta vidare med kursen. </p>
                      <!-- Last paragraph -->
                      <p class="content-paragraph"> </p>
                     
