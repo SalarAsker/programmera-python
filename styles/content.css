@@ -227,13 +227,14 @@ ul li div{
     padding: 1rem;
     border-left: 3px solid  rgb(52, 52, 135);
     font-family: 'Source Code Pro', monospace;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     width: 100%;
     
 }
 #language-python{
     background-color: lightgreen;
     width: 100%;
+    margin-top: 5px;
 }
 .python-keyword {
     color: blue;
@@ -271,6 +272,7 @@ ul li div{
     cursor: pointer;
     background-color: lightgreen;
     padding: 0.5rem;
+    margin-left: 5px;
 }
 
         @media (max-width: 700px) {
@@ -386,3 +388,4 @@ ul li div{
           
         }
     }
+    

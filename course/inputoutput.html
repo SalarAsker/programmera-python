@@ -109,9 +109,9 @@
                         <span class="python-keyword">print</span><span class="python-punctuation">(</span><span>namn</span><span class="python-punctuation">)</span>  
                     </div>
                      <!-- code block -->
-                     <p class="content-paragraph">När du kör programmet ser du ett meddelande ‘vad heter du?’, framför detta ser du en blinkande prompt, vilket betyder att programmet förväntar sig en input från användaren. Om du skriver ditt namn och trycker Enter ser du en utskrift ‘Hej xxxxx’.</p>
+                     <p class="content-paragraph">När du kör programmet ser du ett meddelande 'vad heter du?'', framför detta ser du en blinkande prompt, vilket betyder att programmet förväntar sig en input från användaren. Om du skriver ditt namn och trycker Enter ser du en utskrift ‘Hej xxxxx’.</p>
                      <p class="content-paragraph">På den första raden anropas inläsningsmetoden input( ). Innanför parenteserna ska man skriva den fråga som man vill att programmet ska skriva ut. Programmet väntar sedan tills den som kör programmet har skrivit ett svar. Metoden avslutas så fort man trycker Enter tangenten efter att ha skrivit svaret. Som resultat returnerar metoden svaret (den text som användaren skrivit). Svaret läggs här i en variabel som ges namnet namn.</p>
-                     <p class="content-paragraph">Metoden input( ) returnerar alltid data av typen str (string eller text). Mer om detta kommer senare i denna modul.</p>
+                     <p class="content-paragraph">Metoden input( ) returnerar alltid data av typen str (string eller text). Vänta lite så lär du dig att hur man konverterar datan från typen str till andra typer.</p>
 
                     
                      
@@ -127,7 +127,7 @@
                         </div>
                     </div>
                     <!-- fakta ruta code -->
-                    <p class="content-paragraph">På den andra raden anropas utskriftsmetoden print( ). Innanför parenteserna anger man vad man vill ska skrivas ut. Det ska vara en text eller flera texter. Om det är flera texter räknar man upp dem med kommatecken mellan. I detta exempel är ‘Hej’ den första texten som ska skrivas ut. Den andra texten ska skrivas ut är den text som finns i variabeln namn. Observera att det inte ska vara citationstecken runt ordet namn. Detta ord är ju variabelnamnet, inte själva texten.</p>
+                    <p class="content-paragraph">På den andra raden anropas utskriftsmetoden print( ). Innanför parenteserna anger man vad man vill ska skrivas ut. Det ska vara en text eller flera texter. Om det är flera texter räknar man upp dem med kommatecken mellan. I detta exempel är 'Hej' den första texten som ska skrivas ut. Den andra texten ska skrivas ut är den text som finns i variabeln namn. Observera att det inte ska vara citationstecken runt ordet namn. Detta ord är ju variabelnamnet, inte själva texten.</p>
                       <!-- faktaruta code -->
                       <div class="fakta-ruta-container">
                         <div class="fakta-ruta-box">
@@ -137,32 +137,26 @@
                             <span class="fakta-ruta-text"><i class="fa-regular fa-star fa-fade"></i> Metoden print() kan ta flera argument som print(text1, text2, text3). Argumenten måste vara åtskilda via ett kommatecken. Det läggs automatiskt ett blankt tecken på mallan.</span> 
                         </div>
                     </div>
-                    <!-- fakta ruta code -->
-                    <p class="content-paragraph">Innan vi går vidare jobbar vi lite mer med dessa metoder.</p>
-                    <p class="content-paragraph"></p>
-                    <p class="content-paragraph"></p>
-                    <p class="content-paragraph"></p>
-                    <p class="content-paragraph"></p>
-                    <p class="content-paragraph"></p>
-
+                  
                      
                       
                      
                      
 
                     <h2 class="content-title-level2">Övningar</h2>
-                    <p class="content-paragraph"> Innan du går vidare måste du bli duktig på att skapa och använda variabler. Lös följande övningar och då är du redo för en nästa utmaning. </p>
+                    <p class="content-paragraph"> Innan du går vidare behöver du träna på print() och input() funktioner. Lös följande övningar. </p>
                     <!-- Exercise div START -->
                     <div class="exercise">
                             <details>
                                 
-                                    <summary><span class="question">Koda en print() metod och ge den flera argument att skriva ut. <br> T.ex. <br> print( 'Vi har börjat med att', 'programmera i', 'Python')
+                                    <summary><span class="question">1. Koda följande <span class="python-keyword">print()</span> funktion i ett program och studera resultat. <span class="python-keyword">print()</span> funktionen har tre argument.  
+                                        <br> <span class="python-keyword">print</span>(<span class="python-string">'Vi har börjat med att'</span>,<span class="python-string">'programmera i'</span>,<span class="python-string">'Python'</span>)
                                         </span> <span class="answer">Svar</span> </summary>                          
                                 <p >
                                     <!-- code block -->
                                     <div class="language-python" id="language-python">
-                                        <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">x = 50</span> <br>
-                                        <span class="python-keyword" style="margin-bottom: 5px;display: inline-block;">print</span><span class="python-punctuation">(</span><span >x</span><span class="python-punctuation">)</span><br>
+                                        <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">Vi har börjat med att programmera i Python</span> <br>
+                                        <!-- <span class="python-keyword" style="margin-bottom: 5px;display: inline-block;">print</span><span class="python-punctuation">(</span><span >x</span><span class="python-punctuation">)</span><br> -->
                                     </div>
                                     <!-- code block -->
                                 </p>
@@ -170,13 +164,13 @@
 
                             <details>
                                 
-                                <summary><span class="question">Skriv en ny version av programmet ovan. Skapa två variabler, msg1 och msg2. Ge msg1 texten 'Vi har börjat med att', msg2 texten 'programmera i'. Låt texten ‘Python’ sitta kvar. Koda nu en print() som skriver ut samma utskrift som i fråga 1</span> <span class="answer">Svar</span> </summary>                          
+                                <summary><span class="question">2. Skriv en ny version av programmet ovan. Skapa två variabler, <span class="imp--word--exer">msg1</span> och <span class="imp--word--exer">msg2</span>. Ge <span class="imp--word--exer">msg1</span> texten <span class="imp--word--exer">'Vi har börjat med att'</span>, <span class="imp--word--exer">msg2</span> texten <span class="imp--word--exer">'programmera i'</span>. Låt texten <span class="imp--word--exer">'Python'</span> sitta kvar. Koda nu en <span class="python-keyword">print()</span> som skriver ut samma utskrift som i fråga 1</span> <span class="answer">Svar</span> </summary>                          
                             <p id="language-python">
                                 <!-- code block -->
                                 <div class="language-python" id="language-python">
-                                    <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">nummer = 10</span> <br>
-                                    <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">upphojt = nummer * nummer</span> <br>
-                                    <span class="python-keyword" style="margin-bottom: 5px;display: inline-block;">print</span><span class="python-punctuation">(</span><span >upphojt</span><span class="python-punctuation">)</span><br>
+                                    <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">msg1 = <span class="python-string">'Vi har börjat med att'</span></span> <br>
+                                    <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">msg2 = <span class="python-string">'programmera i'</span></span> <br>
+                                    <span class="python-keyword" style="margin-bottom: 5px;display: inline-block;">print</span><span class="python-punctuation">(</span><span >msg1,msg2,<span class="python-string">'Python'</span></span><span class="python-punctuation">)</span><br>
                                 </div>
                                 <!-- code block -->    
                             </p>
@@ -253,7 +247,14 @@
                     </p>
                      <!-- Last paragraph -->
                      <p class="content-paragraph"> </p>
-                    
+                      <!-- fakta ruta code -->
+                      <p class="content-paragraph"></p>
+                      <p class="content-paragraph"></p>
+                      <p class="content-paragraph"></p>
+                      <p class="content-paragraph"></p>
+                      <p class="content-paragraph"></p>
+                      <p class="content-paragraph"></p>
+  
 
                      
 
