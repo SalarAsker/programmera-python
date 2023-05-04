@@ -93,9 +93,11 @@
 
                    <div class="flex-child3">
 
-                      <h1 class="content-title-level1">Läsa in och skriva ut <br>input() och print() funktioner</h1>
-                      <p class="special-tag">------Att arbeta med data.</p>
-                      <p class="content-paragraph" style="font-style: italic;">Från och med denna modul börjar du arbeta med datan. Du lär dig skapa och använda variabler i Python. En variabel är en reserverad plats i datorns arbetsminne som innehåller ett värde av en specifik typ.</p>
+                      <h1 class="content-title-level1">Läsa in data via input() funktion <br> och behov av typkonvertering</h1>
+                      <p class="special-tag">------Att läsa in data i prgrammet och arbeta med typkonvertering.</p>
+                      
+                      <h2 class="content-title-level2">Inläsning av data via input()</h2>
+                      <p class="content-paragraph" style="font-style: italic;">Det är nu dags att se att hur man läser in data i prgrammet. Inläsning av data betyder att man skriver mer realistiska program där användaren är inblandet och ger data till ett program.</p>
 
                       <p class="content-paragraph">Du har sett flera exempel på hur man kan tilldela numeriska värden till variabler. Värden som vi tilldelat i tidigare avsnitt var förbestämda eftersom de redan var där när programmet exekverats. Men för att kunna skriva realistiska program måste man involvera användarna så att de kan skriva in tal när programmet körs. </p>
 
@@ -106,17 +108,19 @@
                      <div class="language-python">
                         
                         <span>namn = </span><span class="python-keyword">input</span><span class="python-punctuation">(</span><span class="python-string">'vad heter du?'</span><span class="python-punctuation">)</span> <br>
-                        <span class="python-keyword">print</span><span class="python-punctuation">(</span><span>namn</span><span class="python-punctuation">)</span>  
+                        <span class="python-keyword">print</span><span class="python-punctuation">(</span><span><span class="python-string">'Hej!'</span>,namn</span><span class="python-punctuation">)</span>  
                     </div>
                      <!-- code block -->
-                     <p class="content-paragraph">När du kör programmet ser du ett meddelande 'vad heter du?'', framför detta ser du en blinkande prompt, vilket betyder att programmet förväntar sig en input från användaren. Om du skriver ditt namn och trycker Enter ser du en utskrift ‘Hej xxxxx’.</p>
+                     <p class="content-paragraph">När du kör programmet ser du ett meddelande 'vad heter du?'', framför detta ser du en blinkande prompt, vilket betyder att programmet förväntar sig en input från användaren. Om du skriver ditt namn och trycker Enter ser du en utskrift 'Hej xxxxx'.</p>
                      <p class="content-paragraph">På den första raden anropas inläsningsmetoden input( ). Innanför parenteserna ska man skriva den fråga som man vill att programmet ska skriva ut. Programmet väntar sedan tills den som kör programmet har skrivit ett svar. Metoden avslutas så fort man trycker Enter tangenten efter att ha skrivit svaret. Som resultat returnerar metoden svaret (den text som användaren skrivit). Svaret läggs här i en variabel som ges namnet namn.</p>
                      <p class="content-paragraph">Metoden input( ) returnerar alltid data av typen str (string eller text). Vänta lite så lär du dig att hur man konverterar datan från typen str till andra typer.</p>
 
                     
                      
-                      <!-- faktaruta code -->
-                       <div class="fakta-ruta-container">
+                     
+                    <p class="content-paragraph">På den andra raden anropas utskriftsmetoden print( ), som vi känner till sedan tidigare. Innanför parenteserna anger man vad man vill ska skrivas ut. Det ska vara en text eller flera texter(vi har redan studerat funtionen print() i Hello world program modul). Om det är flera texter räknar man upp dem med kommatecken mellan. I detta exempel är 'Hej!' den första texten som ska skrivas ut. Den andra texten ska skrivas ut är den text som finns i variabeln namn. Notera en gång till att det inte ska vara citationstecken runt ordet namn. Detta ord är ju variabelnamnet, inte själva texten.</p>
+                     <!-- faktaruta code -->
+                     <div class="fakta-ruta-container">
                         <div class="fakta-ruta-box">
                             <span class="fakta-ruta-title">input() funktion</span> <br>
                             <span class="fakta-ruta-text"><i class="fa-regular fa-star fa-fade"></i> Metoden input() är en standardfunktion i Python.</span> <br>
@@ -127,16 +131,6 @@
                         </div>
                     </div>
                     <!-- fakta ruta code -->
-                    <p class="content-paragraph">På den andra raden anropas utskriftsmetoden print( ). Innanför parenteserna anger man vad man vill ska skrivas ut. Det ska vara en text eller flera texter. Om det är flera texter räknar man upp dem med kommatecken mellan. I detta exempel är 'Hej' den första texten som ska skrivas ut. Den andra texten ska skrivas ut är den text som finns i variabeln namn. Observera att det inte ska vara citationstecken runt ordet namn. Detta ord är ju variabelnamnet, inte själva texten.</p>
-                      <!-- faktaruta code -->
-                      <div class="fakta-ruta-container">
-                        <div class="fakta-ruta-box">
-                            <span class="fakta-ruta-title">print() funktion</span> <br>
-                            <span class="fakta-ruta-text"><i class="fa-regular fa-star fa-fade"></i> Metoden print() är en standardfunktion i Python.</span> <br>
-                            <span class="fakta-ruta-text"><i class="fa-regular fa-star fa-fade"></i> Med metoden print() kan man skriva ut data.</span> <br>
-                            <span class="fakta-ruta-text"><i class="fa-regular fa-star fa-fade"></i> Metoden print() kan ta flera argument som print(text1, text2, text3). Argumenten måste vara åtskilda via ett kommatecken. Det läggs automatiskt ett blankt tecken på mallan.</span> 
-                        </div>
-                    </div>
                   
                      
                       
@@ -177,40 +171,38 @@
                         </details>
                         <details>
                                 
-                            <summary><span class="question">Kör flera input() och läs in personuppgifter förnamn, efternamn, telefon och email. Programmet ska skriva ut en utskrift som följande, 
-                                Vi har tagit emot uppgifter: 
-                                Name: Salar Asker 
-                                Telefon: 0738000000 
-                                Email: salar@abc.com
-                                (för att införa en radbrytning lägg \n i strängen)
+                            <summary><span class="question">3. Kör flera <span class="python-keyword">input()</span> och läs in personuppgifter <span class="imp--word--exer">förnamn</span>, <span class="imp--word--exer">efternamn</span>, <span class="imp--word--exer">telefon</span> och <span class="imp--word--exer">email</span>. Programmet ska skriva ut en utskrift som följande,<br> <span class="imp--word--exer">Vi har tagit emot uppgifter:<br>Name: Salar Asker<br>Telefon: 0738000000<br>Email: salar@abc.com<br>(för att införa en radbrytning lägg \n i strängen)</span>
                                 </span> <span class="answer">Svar</span> </summary>                          
                         <p id="language-python">
                             <!-- code block -->
                             <div class="language-python" id="language-python">
-                                <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">a = 10</span> <br>
-                                <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">b = a</span> <br>
-                                <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">c = a + b</span> <br>
-                                <span class="python-keyword" style="margin-bottom: 5px;display: inline-block;">print</span><span class="python-punctuation">(</span><span >c</span><span class="python-punctuation">)</span><br>
+                                <spanstyle="margin-bottom: 5px;display: inline-block;">namn = <span class="python-keyword">input</span></spanstyle=><span class="python-punctuation">(</span><span ><span class="python-string">'Ange ditt namn: '</span></span><span class="python-punctuation">)</span><br>
+                                <spanstyle="margin-bottom: 5px;display: inline-block;">telefon = <span class="python-keyword">input</span></spanstyle=><span class="python-punctuation">(</span><span ><span class="python-string">'Ange ditt telefon: '</span></span><span class="python-punctuation">)</span><br>
+
+                                <spanstyle="margin-bottom: 5px;display: inline-block;">mejl = <span class="python-keyword">input</span></spanstyle=><span class="python-punctuation">(</span><span ><span class="python-string">'Ange ditt mejl: '</span></span><span class="python-punctuation">)</span><br>
+                               
+                                <br>
+                          
+                                <span class="python-keyword" style="margin-bottom: 5px;display: inline-block;">print</span><span class="python-punctuation">(</span><span> <span class="python-string">'\nVi har tagit emot uppgifter'</span></span><span class="python-punctuation">)</span><br>
+                                <span class="python-keyword" style="margin-bottom: 5px;display: inline-block;">print</span><span class="python-punctuation">(</span><span> <span class=""><span class="python-string">'Namn:',</span>namn,<span class="python-string"></span></span></span><span class="python-punctuation">)</span><br>
+                                <span class="python-keyword" style="margin-bottom: 5px;display: inline-block;">print</span><span class="python-punctuation">(</span><span> <span class=""><span class="python-string">'Telefon:'</span>,telefon,<span class="python-string"></span></span></span><span class="python-punctuation">)</span><br>
+                                <span class="python-keyword" style="margin-bottom: 5px;display: inline-block;">print</span><span class="python-punctuation">(</span><span> <span class=""><span class="python-string">'Mejl:'</span>,mejl</span></span><span class="python-punctuation">)</span><br>
                             </div>
                             <!-- code block -->    
                         </p>
                         </details>
                         <details>
                                 
-                            <summary><span class="question">Skapa två variabler som följande, 
-                                a = 10
-                                b = 20
-                                Koda en print som genererar följande utskrift
-                                Summan är: 30
+                            <summary><span class="question">4. Skapa två variabler i ett program som följande,<span class="imp--word--exer"> <br>a = 10<br>b = 20</span> <br>Koda en <span class="python-keyword">print()</span> som genererar följande utskrift<br><span class="imp--word--exer">Summan är: 30</span>
                                 
                                 </span> <span class="answer">Svar</span> </summary>                          
                         <p id="language-python">
                             <!-- code block -->
                             <div class="language-python" id="language-python">
                                 <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">a = 10</span> <br>
-                                <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">b = a</span> <br>
-                                <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">c = a + b</span> <br>
-                                <span class="python-keyword" style="margin-bottom: 5px;display: inline-block;">print</span><span class="python-punctuation">(</span><span >c</span><span class="python-punctuation">)</span><br>
+                                <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">b = 20</span> <br>
+                                <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">summa = a + b</span> <br>
+                                <span class="python-keyword" style="margin-bottom: 5px;display: inline-block;">print</span><span class="python-punctuation">(</span><span ><span class="python-string">'Summan är:'</span>,summa</span><span class="python-punctuation">)</span><br>
                             </div>
                             <!-- code block -->    
                         </p>
@@ -218,48 +210,49 @@
 
                         <details>
                                 
-                            <summary><span class="question">Nu skriver vi en ny version av program 4. Istället för att skapa variabler a och b med talen 10 och 20 ska vi läsa in data i båda variabler via input() metoden. Vi ska sedan addera båda variabler och försöka  skriva ut summan. Så här ser programkoden ut: (anta att vi ger 10 och 20 till programmet.)
-
-                                a = input('Ange nummer1:')
-                                b = input('Ange nummer2:')
-                                summan = a + b
-                                print('Summan är:', summan)
-                                  
-                                (här kommer bli resultatet annorlunda. Istället för 30 ser man 1020 i utskriften. Varför blir detta resultat förklaras i nästa avsnitt)
+                            <summary><span class="question">5. Nu skriver du en ny version av program 4. Istället för att skapa variabler <span class="imp--word--exer">a</span>  och <span class="imp--word--exer">b</span>  med talen <span class="imp--word--exer">10</span>  och <span class="imp--word--exer">20</span>  ska du läsa in data i båda variabler via <span class="python-keyword">input()</span> funktionen. Du ska sedan addera båda variabler och försöka  skriva ut summan. Kod programmet och undersök om du får rätt resultat.
+                            <!-- <br> a = input('Ange nummer1:')
+                            <br> b = input('Ange nummer2:')
+                            <br> summan = a + b
+                            <br>print('Summan är:', summan) <br>
+                            <br>Anta att vi ger 10 och 20 till programmet så istället för summa 30 ser man 1020 i utskriften. Resultatet blir märkligt.Varför blir detta resultat förklaras i nästa avsnitt) -->
                                 
                                 </span> <span class="answer">Svar</span> </summary>                          
                         <p id="language-python">
                             <!-- code block -->
                             <div class="language-python" id="language-python">
-                                <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">a = 10</span> <br>
-                                <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">b = a</span> <br>
-                                <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">c = a + b</span> <br>
-                                <span class="python-keyword" style="margin-bottom: 5px;display: inline-block;">print</span><span class="python-punctuation">(</span><span >c</span><span class="python-punctuation">)</span><br>
+                                <spanstyle="margin-bottom: 5px;display: inline-block;">a = <span class="python-keyword">input</span></spanstyle=><span class="python-punctuation">(</span><span ><span class="python-string">'Ange tal1: '</span></span><span class="python-punctuation">)</span><br>
+                                <spanstyle="margin-bottom: 5px;display: inline-block;">b = <span class="python-keyword">input</span></spanstyle=><span class="python-punctuation">(</span><span ><span class="python-string">'Ange tal2: '</span></span><span class="python-punctuation">)</span><br>
+                                <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">summa = a + b</span> 
+                                <span class="python-keyword" style="margin-bottom: 5px;display: inline-block;">print</span><span class="python-punctuation">(</span><span ><span class="python-string">'Summan är:'</span>,summa</span><span class="python-punctuation">)</span><br> <br>
+                                <p>Anta att vi ger 10 och 20 till programmet så istället för att summan blir 30 ser man 1020 i utskriften. Resultatet blir märkligt.Varför blir detta resultat förklaras i nästa avsnitt, 'Typkonvertering'.</p>
                             </div>
                             <!-- code block -->    
                         </p>
                         </details>
                     </div> <!-- Exercise div END -->
                     
+                  
+                    <h2 class="content-title-level2">Typkonvertering</h2> 
                     <!-- Last paragraph -->
-                    <p class="content-paragraph" style="text-align: center; font-style: italic;">
-                        Perkekt! Vi är klar med denna modulen <span class="imp--word">variabel</span>. Du kommmer fortsätta arbeta med variabler kontinurligt i kursen eftersom varje program behandlar någon typ av data och för att hålla/spara data i programmet behöver man  
+                     <p class="content-paragraph">Jag uttryckte tidigare att 'Metoden input( ) returnerar alltid data av typen str (string eller text)'. I programmet ovan (program 5) kommer data i form av string. Det betyder att när användaren matar in 10 och 20, kommer 10 och 20 in i programmet som '10' och '20'. Det kan också betyda att variablerna a och b får typen str (du kan köra type() och testa själv). Om man skriver en sats som följande, </p>
+                     <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">summa = a + b</span> <br>
+                     <p class="content-paragraph">Så adderar man två texter men inte två numeriska tal. När man adderar två texter så läggs båda texterna ihop, och det är därför ser man 1020 i utskriften. 
                     </p>
-                     <!-- Last paragraph -->
-                     <p class="content-paragraph"> </p>
-                      <!-- fakta ruta code -->
-                      <p class="content-paragraph"></p>
-                      <p class="content-paragraph"></p>
-                      <p class="content-paragraph"></p>
-                      <p class="content-paragraph"></p>
-                      <p class="content-paragraph"></p>
-                      <p class="content-paragraph"></p>
+                     <p class="content-paragraph"></p>
+                     <p class="content-paragraph"></p>
+                     <p class="content-paragraph"></p>
+                     <p class="content-paragraph"></p>
+                     <p class="content-paragraph"></p>
   
 
                      
 
            
-                
+                  <!-- Last paragraph -->
+                  <p class="content-paragraph" style="text-align: center; font-style: italic;">
+                    Perkekt! Vi är klar med denna modulen <span class="imp--word">variabel</span>. Du kommmer fortsätta arbeta med variabler kontinurligt i kursen eftersom varje program behandlar någon typ av data och för att hålla/spara data i programmet behöver man  
+                </p>
              
                      
                 
@@ -289,7 +282,7 @@
                         btnNext.innerHTML =`<i class="fa-solid fa-circle-chevron-right fa-fade"></i> <span>${next.charAt(0).toUpperCase()}${next.slice(1)} </span> `;
                             
                             btnPrev.addEventListener('click', () =>{
-                                location.href = 'helloworld.html?prev=köra python&next=variabler';
+                                location.href = 'datatypes.html?prev=variabler&next=input output';
                             })
                             
                             btnNext.addEventListener('click', () =>{
