@@ -159,7 +159,7 @@
                             <div class="fakta-ruta-container">
                                 <div class="fakta-ruta-box">
                                     <span class="fakta-ruta-title">Faktaruta</span> <br>
-                                    <span class="fakta-ruta-text"><i class="fa-regular fa-star fa-fade"></i> Står kort sammanfattning av viktiga moment. Fungerar som snabbreferens.</span>
+                                    <span class="fakta-ruta-text"><i class="fa-regular fa-star "></i> Står kort sammanfattning av viktiga moment. Fungerar som snabbreferens.</span>
                                       
                                 </div>
                             </div>
@@ -168,6 +168,9 @@
                             
                             <h2 class="content-title-level2">Övningsprogram</h2>
                             <p class="content-paragraph">Du kan inte lära dig att programmera genom att läsa. Du måste prova själv och träna. Därför finns det många övningar i kursen. För att få ut det mesta av kursen bör du inte hoppa över övningarna, utan att göra dem när de dyker upp.</p>
+                        
+                            <p class="content-paragraph" style="text-align: center; font-style: italic;">
+                            Gå vidare i kursen genom att klicka på Introduktion.  </p>
                         </div>
                     
                     <div class="pre-next">
@@ -192,8 +195,8 @@
                       
                         prev.toUpperCase();
                         
-                        btnPrev.innerHTML =`<i class="fa-solid fa-circle-chevron-left fa-fade"></i> <span> ${prev.charAt(0).toUpperCase()}${prev.slice(1)}</span>  `;
-                        btnNext.innerHTML =`<i class="fa-solid fa-circle-chevron-right fa-fade"></i> <span>${next.charAt(0).toUpperCase()}${next.slice(1)} </span> `;
+                        btnPrev.innerHTML =`<i class="fa-solid fa-circle-chevron-left"></i> <span> ${prev.charAt(0).toUpperCase()}${prev.slice(1)}</span>  `;
+                        btnNext.innerHTML =`<i class="fa-solid fa-circle-chevron-right"></i> <span>${next.charAt(0).toUpperCase()}${next.slice(1)} </span> `;
                         
                         btnPrev.addEventListener('click', () =>{
                             location.href = 'startsida.html';

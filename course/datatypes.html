@@ -292,7 +292,7 @@
                         <p id="language-python">
                             <!-- code block -->
                             <div class="language-python" id="language-python">
-                                <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">Om du tycker att summan bli 24 så har du fel. Resultatet blir 1212 och variabeln summa får typen str. Varför bli det så här? Det är för att vi adderar en str typ ('12') med en int typ (12) vilket inte går att göra i programmering. Python ska förvandla int typ 12 till str typ '12' i bakgrunden och sedan lägga ihop båda strängar. När man använder plus-tecknet på nummer utförs vanlig addition men på strängar utförs sammanfogning.När programmet själv gör en konvertering kallas det för implicit konvrtering och när programmeraren gör en konvertering kallas det för explicit konvertering. Mer om konvertering från en typ till en annan diskuteras senare i kursen.</span> <br>
+                                <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">Om du tycker att summan blir 24 så har du fel. Resultatet blir 1212 och variabeln summa får typen str. Varför blir det så här? Det är för att vi adderar en str typ ('12') med en int typ (12) vilket inte går att göra i programmering. Python ska förvandla int typ 12 till str typ '12' i bakgrunden och sedan lägga ihop båda strängar. När man använder plus-tecknet på nummer utförs vanlig addition men på strängar utförs sammanfogning. När programmet själv gör en konvertering kallas det för implicit konvrtering och när programmeraren gör en konvertering kallas det för explicit konvertering. Mer om konvertering från en typ till en annan diskuteras i nästa modul.</span> <br>
                             </div>
                             <!-- code block -->    
                         </p>
@@ -301,7 +301,7 @@
                     
                     <!-- Last paragraph -->
                     <p class="content-paragraph" style="text-align: center; font-style: italic;">
-                        Perkekt! Du vet nu väl att vilka olika datatyper finns i Python och hur man skapar variablar som kan lagra de olika typer. Det är nu dags att börja skriva mer realistiska program som har läser in data i programmet. Klick näst och arbeta vidare med kursen. </p>
+                        Perkekt! Du vet nu väl att vilka olika datatyper finns i Python och hur man skapar variablar som kan lagra de olika typer. Det är nu dags att börja skriva mer realistiska program som kan läsa in data. Klick näst och arbeta vidare i kursen. </p>
                      <!-- Last paragraph -->
                      <p class="content-paragraph"> </p>
                     
@@ -335,8 +335,8 @@
                             console.log(next);  
                             prev.toUpperCase();
                             
-                            btnPrev.innerHTML =`<i class="fa-solid fa-circle-chevron-left fa-fade"></i> <span> ${prev.charAt(0).toUpperCase()}${prev.slice(1)}</span>  `;
-                        btnNext.innerHTML =`<i class="fa-solid fa-circle-chevron-right fa-fade"></i> <span>${next.charAt(0).toUpperCase()}${next.slice(1)} </span> `;
+                            btnPrev.innerHTML =`<i class="fa-solid fa-circle-chevron-left "></i> <span> ${prev.charAt(0).toUpperCase()}${prev.slice(1)}</span>  `;
+                        btnNext.innerHTML =`<i class="fa-solid fa-circle-chevron-right "></i> <span>${next.charAt(0).toUpperCase()}${next.slice(1)} </span> `;
                             
                             btnPrev.addEventListener('click', () =>{
                                 location.href = 'variable.html?prev=hello world&next=data typer';
