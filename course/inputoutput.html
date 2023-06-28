@@ -310,16 +310,85 @@
                                 <p>
                                     <!-- code block -->
                                     <div class="language-python" id="language-python">
-                                        <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">Vi har börjat med att programmera i Python</span> <br>
-                                        <!-- <span class="python-keyword" style="margin-bottom: 5px;display: inline-block;">print</span><span class="python-punctuation">(</span><span >x</span><span class="python-punctuation">)</span><br> -->
+                                       
+                                        <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">
+                                            tal = <span class="python-keyword">int</span>(<span class="python-keyword">input</span>(<span class="python-string">'Skriv ett tal: '</span>))    
+                                        </span> <br>
+                                        
+                                        <span class="python-keyword" style="margin-bottom: 5px;display: inline-block;">
+                                            kvad = tal * tal
+                                        </span><br>
+
+                                        <span class="python-keyword" style="margin-bottom: 5px;display: inline-block;">
+                                            <span class="python-keyword">print</span>(<span class="python-string">'Talet i kvadrat är :'</span>, kvad)
+                                        </span><br>
                                     </div>
                                     <!-- code block -->
                                 </p>
                             </details>
+
+                            <details>
+                                
+                                <summary>
+                                    <span class="question">
+                                       7. Skriv en ny version av program 6 som räknar ut kvadraten till ett heltal. I den nya versionen ska man kunna beräkna kvadraten av vilket tal som helst (använd konverteringsmetoden <span class="python-keyword">float()</span> istället för <span class="python-keyword">int()</span>). Kör programmet och låt den först räkna ut kvadraten på 1.5 och sedan 1.6.
+ 
+                                      <!-- <br> <span class="imp--word--exer">
+                                        Skriv ett tal:12<br>Talet i kvadrat är: 144
+                                        </span> -->
+                                    </span>
+                                    
+                                    <span class="answer">Svar</span> 
+                                </summary>                          
+                            <p>
+                                <!-- code block -->
+                                <div class="language-python" id="language-python">
+                                   
+                                    <span class="python-punctuation" style="margin-bottom: 5px;display: inline-block;">
+                                        När du räknar ut kvadraten till 1.6 får du i utskriften, <br>
+                                        Talet i kvadrat är: 2.5600000000000005 <br>
+                                        Vad man ser här är massor av nollor och en konstig siffra i slutet. Vad beror den på och hur formaterar man utskriften? diskuteras i nästa avsnitt. 
+                                           
+                                    </span> <br>
+                                    
+                                    <!-- <span class="python-keyword" style="margin-bottom: 5px;display: inline-block;">
+                                        kvad = tal * tal
+                                    </span><br>
+
+                                    <span class="python-keyword" style="margin-bottom: 5px;display: inline-block;">
+                                        <span class="python-keyword">print</span>(<span class="python-string">'Talet i kvadrat är :'</span>, kvad)
+                                    </span><br> -->
+                                </div>
+                                <!-- code block -->
+                            </p>
+                        </details>
+
                         </div>
                         <!-- code block ends here -->
-                     <p class="content-paragraph"></p>
-                     <p class="content-paragraph"></p>
+
+                     <h2 class="content-title-level2"> Formatera utskriften</h2> 
+                     <p class="content-paragraph">
+                        När du gav 1.5 som indata till program 7 i förra avsnittet såg utskriften bra ut. Men med indata 1.6 fick du utskriften,
+                    </p>
+                    <div class="language-python">
+                        <span>Talet i kvadrat är: 2.5600000000000005</span>
+                    </div>
+                     <p class="content-paragraph">
+                        I utskriften, de första siffrorna är rätt, men därefter kommer en massa nollor och sedan en konstig siffra på slutet. Detta hänger ihop med hur numeriska värden av typen float lagras i datorn. Hur lagringen går till beror på det programspråk själva Python är skriven i, men man bör alltid kunna vara säker på att <span class="imp--word">de första 15 decimala siffrorna är korrekta</span>. Om du räknar siffrorna i utskriften så ser du att de första 15 siffrorna i utskriften är korrekta. Vi kan därför strunta i den sista
+                     </p>
+                     <p class="content-paragraph">
+                        Det finns flera sätt att redigera utskrifter i Python, men jag ska visa hur man kan använda <span class="imp--word">formatted string literals (s.k f-string)</span>, vilket är nyast och finns i Python från och med version 3.6.
+                     </p>
+                     <p class="content-paragraph">Vi börjar med att koda om kvadratprogrammet och implementerar <span class="imp--word">f-string</span> i <span class="imp--word--blue">print( )</span> metoden. Programmet ser ut nu på följande sätt. 
+                    </p>
+
+                    <div class="language-python">
+                        <span>tal = float(input('Skriv ett tal:'))</span> <br>
+                        <span>kvad = tal * tal;</span> <br>
+                        <span>print( f  'Talet i kvadrat är: { kvad: .2f  }')</span>
+                    </div>
+                    
+                    <p class="content-paragraph"></p>
                      <p class="content-paragraph"></p>
   
 
